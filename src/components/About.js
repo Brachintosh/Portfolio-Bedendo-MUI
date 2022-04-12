@@ -1,11 +1,27 @@
 import React from 'react'
+import { makeStyles } from "@material-ui/core";
 
-const About = () => {
+const About = ({ title, dark, id }) => {
+
+const classes = useStyles();
+
   return (
-    <h1>
+    <div className={`${classes.section} ${dark && classes.sectionDark}`}>
         About Page
-    </h1>
+    </div>
   )
 }
+
+// Material UI settings hook >> useStyles:
+const useStyles = makeStyles((theme) =>({
+    // ClassName:
+    section:{
+      minHeight:"100vh",
+    },
+    sectionDark:{
+        background: "#343434",
+        color: "#FFF",
+    }
+  }))
 
 export default About

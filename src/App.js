@@ -14,10 +14,10 @@ const classes = useStyles();
     <div className={classes.root}>
       
       <NavBar />
-      <About />
-      <Skills />
-      <MyWork />
-      <ContactMe />
+      <About id="about" title="About Me" dark={true} />
+      <Skills id="skills" title="My Coding Experience" dark={false} />
+      <MyWork id="work" title="My Works" dark={true} />
+      <ContactMe id="contact" title="Get in touch" dark={false} />
 
     </div>
 
