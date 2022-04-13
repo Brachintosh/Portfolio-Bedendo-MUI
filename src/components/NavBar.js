@@ -1,7 +1,16 @@
-import { AppBar, makeStyles, Toolbar } from '@material-ui/core'
-import React from 'react'
-import logo from "../images/coding1a.png"
+import { AppBar, makeStyles, Toolbar } from '@material-ui/core';
+import React from 'react';
+import logo from "../images/coding1a.png";
+import { Link, animateScroll as scroll } from "react-scroll";
+// import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
 
+const linksNav = [
+    {
+        id: 'about',
+        text: 'About Me',
+        // icon: icon,
+    }
+]
 
 const NavBar = () => {
 
