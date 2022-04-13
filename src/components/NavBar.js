@@ -82,23 +82,28 @@ const useStyles = makeStyles((theme) =>({
         },
     },
     menu: {
-      flexGrow: 0.2,
+      // Pantallas chicas:
+      [theme.breakpoints.down("sm")]: {
+        display: "none",
+      },
+      flexGrow: 0.15,
       display: 'flex',
       alignContent: 'center',
       justifyContent: 'space-evenly',
-    },
-    linksNav: {
-        color:'#A0522D',
-        fontWeight: 'bold',
-        transition: 'all ease-in-out .7s',
-        textShadow: ".6px .5px #FCFF53",
-        "&:hover, &.Mui-focusVisible": {
-            cursor: 'pointer',
-            fontWeight: 'bold',
-            transition: 'all ease 0.6s',
-            color: "#FF5353",
-            textShadow: ".8px .65px  #A0522D",
-        },
+      // Links: [[ anchor ]]
+      "& a": {
+          color:'#A0522D',
+          fontWeight: 'bold',
+          transition: 'all ease-in-out .7s',
+          textShadow: ".6px .5px #FCFF53",
+          "&:hover, &.Mui-focusVisible": {
+              cursor: 'pointer',
+              fontWeight: 'bold',
+              transition: 'all ease 0.6s',
+              color: "#FF5353",
+              textShadow: ".8px .65px  #A0522D",
+          },
+      },
     },
     root: {
         backgroundColor: "#FFE082",

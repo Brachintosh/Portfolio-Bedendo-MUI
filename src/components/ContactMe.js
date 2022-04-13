@@ -1,5 +1,5 @@
 import React from 'react'
-import { makeStyles } from "@material-ui/core";
+import { makeStyles, Typography} from "@material-ui/core";
 
 const ContactMe = ({ title, dark, id }) => {
 
@@ -7,7 +7,9 @@ const classes = useStyles();
 
   return (
     <div className={`${classes.section} ${dark && classes.sectionDark}`}>
-        Contact Me
+      <div className={classes.sectionContent} id={id} >
+          <Typography variant="h3" >{title}</Typography>
+      </div>
     </div>
   )
 };
@@ -18,11 +20,17 @@ const useStyles = makeStyles((theme) =>({
     section:{
       minHeight:"100vh",
       background: 'rgb(255, 248, 220)',
+      color: "#A0522D",
     },
     sectionDark:{
-        background: "#343434",
-        color: "#FFF",
-    }
+      background: "#361500",
+      color: 'rgb(255, 248, 220)',
+    },
+    sectionContent: {
+      maxWidth: "85vw",
+      margin: "0 auto",
+      paddingTop: 9,
+    },
   }));
 
 
