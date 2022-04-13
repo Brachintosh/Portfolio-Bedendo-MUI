@@ -36,11 +36,13 @@ const useStyles = makeStyles((theme) =>({
         flexGrow: 1,
         display: 'flex',
         alignContent: 'center',
-        color:'#FFFDE7',
-        transition: '0.4s',
+        color:'#A0522D',
+        transition: 'all ease-in-out .7s',
+        textShadow: ".8px .65px #FCFF53",
         "&:hover, &.Mui-focusVisible": {
-            transition: '0.75s',
-            color: "#343434",
+            transition: 'all ease-in-out 0.6s',
+            color: "#FF5353",
+            textShadow: ".8px .65px  #A0522D",
         },
     },
     root: {
