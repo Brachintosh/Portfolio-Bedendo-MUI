@@ -68,6 +68,7 @@ const useStyles = makeStyles((theme) =>({
     offset: theme.mixins.toolbar,
     nameStyle: {
         flexGrow: 1,
+        fontWeight: 'bold',
         display: 'flex',
         alignContent: 'center',
         color:'#A0522D',
@@ -76,6 +77,7 @@ const useStyles = makeStyles((theme) =>({
         "&:hover, &.Mui-focusVisible": {
             transition: 'all ease 0.6s',
             color: "#FF5353",
+            fontWeight: 'bold',
             textShadow: ".8px .65px  #A0522D",
         },
     },
@@ -87,10 +89,12 @@ const useStyles = makeStyles((theme) =>({
     },
     linksNav: {
         color:'#A0522D',
+        fontWeight: 'bold',
         transition: 'all ease-in-out .7s',
         textShadow: ".6px .5px #FCFF53",
         "&:hover, &.Mui-focusVisible": {
             cursor: 'pointer',
+            fontWeight: 'bold',
             transition: 'all ease 0.6s',
             color: "#FF5353",
             textShadow: ".8px .65px  #A0522D",
