@@ -1,15 +1,36 @@
-import { AppBar, makeStyles, Toolbar, Typography } from '@material-ui/core';
+import { AppBar, makeStyles, Toolbar, Typography, List } from '@material-ui/core';
 import React from 'react';
 import logo from "../images/coding1a.png";
 import { Link, animateScroll as scroll } from "react-scroll";
-// import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
+import BuildTwoToneIcon from '@material-ui/icons/BuildTwoTone';
+import ContactMailTwoToneIcon from '@material-ui/icons/ContactMailTwoTone';
+import EmailTwoToneIcon from '@material-ui/icons/EmailTwoTone';
+import EmojiObjectsTwoToneIcon from '@material-ui/icons/EmojiObjectsTwoTone';
+import InfoTwoToneIcon from '@material-ui/icons/InfoTwoTone';
+//  InfoOutlinedIcon, InfoTwoTone, 
+
 
 const linksNav = [
     {
         id: 'about',
-        text: 'About Me',
-        // icon: icon,
-    }
+        text: 'About',
+        icon: <InfoTwoToneIcon />,
+    },
+    {
+        id: 'skills',
+        text: 'Skills',
+        icon: <EmojiObjectsTwoToneIcon />,
+    },
+    {
+        id: 'work',
+        text: 'My Works',
+        icon: <BuildTwoToneIcon />,
+    },
+    {
+        id: 'contact',
+        text: 'Get in touch',
+        icon: <ContactMailTwoToneIcon />,
+    },
 ]
 
 const NavBar = () => {
@@ -23,6 +44,19 @@ const classes = useStyles();
             <img src={logo} className={classes.logo} alt="No-connection" />
             Brian Bedendo
           </Typography>
+
+          <List className={classes.menu}>
+            {
+              linksNav?.map(({ id, text }, index)=> (
+                <Link className={classes.linksNav}
+                 key={index} to={id} spy={true} smooth={true} duration={500} 
+                >
+                  {text}
+                </Link>
+              ))
+            }
+          </List>
+          
         </Toolbar>
     </AppBar>
   )
@@ -38,9 +72,26 @@ const useStyles = makeStyles((theme) =>({
         alignContent: 'center',
         color:'#A0522D',
         transition: 'all ease-in-out .7s',
-        textShadow: ".8px .65px #FCFF53",
+        textShadow: ".6px .5px #FCFF53",
         "&:hover, &.Mui-focusVisible": {
-            transition: 'all ease-in-out 0.6s',
+            transition: 'all ease 0.6s',
+            color: "#FF5353",
+            textShadow: ".8px .65px  #A0522D",
+        },
+    },
+    menu: {
+      flexGrow: 0.2,
+      display: 'flex',
+      alignContent: 'center',
+      justifyContent: 'space-evenly',
+    },
+    linksNav: {
+        color:'#A0522D',
+        transition: 'all ease-in-out .7s',
+        textShadow: ".6px .5px #FCFF53",
+        "&:hover, &.Mui-focusVisible": {
+            cursor: 'pointer',
+            transition: 'all ease 0.6s',
             color: "#FF5353",
             textShadow: ".8px .65px  #A0522D",
         },
