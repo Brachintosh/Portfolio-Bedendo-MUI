@@ -49,7 +49,7 @@ const classes = useStyles();
             {
               linksNav?.map(({ id, text }, index)=> (
                 <Link className={classes.linksNav}
-                 key={index} to={id} spy={true} smooth={true} duration={500} 
+                 key={index} to={id} spy={true} activeClass="active" smooth={true} duration={750} offset={-60}
                 >
                   {text}
                 </Link>
