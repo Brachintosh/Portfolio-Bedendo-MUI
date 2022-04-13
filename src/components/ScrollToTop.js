@@ -52,8 +52,9 @@ const useStyles = makeStyles((theme) =>({
         background: "#DCE775",
         boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
         color: "#424242",
+        transition: '0.5s',
         "&:hover, &.Mui-focusVisible": {
-            transition: '0.3s',
+            transition: '0.53s',
             color: 'rgb(255, 248, 220)',
             backgroundColor: '#FF8E53',
             boxShadow: '0.9px 5px 6px 2.5px rgba(255, 105, 135, .3)',

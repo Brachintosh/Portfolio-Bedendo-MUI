@@ -16,6 +16,7 @@ const classes = useStyles();
 const useStyles = makeStyles((theme) =>({
     // ClassName:
     section:{
+      paddingTop: '0.5em',
       minHeight:"100vh",
     },
     sectionDark:{
