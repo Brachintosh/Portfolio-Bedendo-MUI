@@ -37,6 +37,7 @@ const useStyles = makeStyles((theme) =>({
         display: 'flex',
         alignContent: 'center',
         color:'#FFFDE7',
+        transition: '0.4s',
         "&:hover, &.Mui-focusVisible": {
             transition: '0.75s',
             color: "#343434",
