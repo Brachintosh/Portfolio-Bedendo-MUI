@@ -15,7 +15,7 @@ const classes = useStyles();
         {'. This Portfolio was styled using '}{' '}
         <Link color="inherit" href="https://mui.com/" target="_blank" className={classes.links} >
             Material UI
-        </Link>{' ™️ and made by '}
+        </Link>{' ™️ and developed by '}
         <Link color="inherit" href="https://github.com/Brachintosh" target="_blank" className={classes.links} >
             brachintosh
         </Link>
