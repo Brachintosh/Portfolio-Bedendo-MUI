@@ -8,7 +8,7 @@ const classes = useStyles();
   return (
     <div className={`${classes.section} ${dark && classes.sectionDark}`}>
       <div className={classes.sectionContent} id={id} >
-          <Typography variant="h3" >{title}</Typography>
+          <Typography variant="h3" >{title}:</Typography>
       </div>
     </div>
   )
