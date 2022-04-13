@@ -8,16 +8,16 @@ const classes = useStyles();
     return (
       <Typography variant="subtitle2" align="center">
         <Link color="inherit" href="https://www.linkedin.com/in/brian-ezequiel-bedendo/" target="_blank" className={classes.links} >
-            Brian E. Bedendo
+            <b> Brian E. Bedendo</b>
         </Link>{' - '}
         {'Copyright © '}
         {new Date().getFullYear()}
         {'. This Portfolio was styled using '}{' '}
         <Link color="inherit" href="https://mui.com/" target="_blank" className={classes.links} >
-            Material UI
+            <b>Material UI</b>
         </Link>{' ™️ and developed by '}
         <Link color="inherit" href="https://github.com/Brachintosh" target="_blank" className={classes.links} >
-            brachintosh
+            <b>brachintosh</b>
         </Link>
       </Typography>
     );
@@ -34,7 +34,7 @@ const classes = useStyles();
             <Typography variant="subtitle2" align="center" className={classes.quote}>
                 “The people who are crazy enough to think they can change the world are the ones who do."{'  -  '}
                 <Link color="inherit" href="https://en.wikipedia.org/wiki/Steve_Jobs" target="_blank" className={classes.links} >
-                    🅂🅃🄴🅅🄴 🄹🄾🄱🅂
+                    <b>🅂🅃🄴🅅🄴 🄹🄾🄱🅂</b>
                 </Link>
             </Typography>
             <Divider className={classes.divider} />
