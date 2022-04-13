@@ -47,8 +47,8 @@ const useStyles = makeStyles((theme) =>({
     toTop: {
         zIndex: 2,
         position: 'fixed',
-        bottom: '4.95vh',
-        right: '5%',
+        bottom: '3em',
+        right: '6%',
         background: "#DCE775",
         boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
         color: "#424242",
