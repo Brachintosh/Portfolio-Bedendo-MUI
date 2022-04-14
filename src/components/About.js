@@ -41,10 +41,6 @@ const classes = useStyles();
                 cursorColor='#EEEEEE'
                 startDelay={4000}
                 typeSpeed={100}
-<<<<<<< HEAD
-                
-              />
-=======
               /><br/>
               
               <TypeWriterEffect 
@@ -83,7 +79,6 @@ const classes = useStyles();
                 startDelay={15000}
                 typeSpeed={100}
               /><br/>
->>>>>>> develop
               
             </CardContent>
           </Card>
