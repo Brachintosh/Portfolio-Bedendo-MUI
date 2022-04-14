@@ -29,20 +29,61 @@ const classes = useStyles();
                 cursorColor='#EEEEEE'
                 startDelay={200}
                 typeSpeed={100}
-              />
+              /><br/>
               
               <TypeWriterEffect 
-                text=" 🚀 Enthusiastic Dev.   "
+                text=" 🚀  -  Enthusiastic Dev.   "
                 textStyle={{
                   fontSize:'1rem',
                   fontWeight: 450,
                   color: '#795548',
                 }}
                 cursorColor='#EEEEEE'
-                startDelay={3800}
+                startDelay={4000}
                 typeSpeed={100}
+<<<<<<< HEAD
                 
               />
+=======
+              /><br/>
+              
+              <TypeWriterEffect 
+                text=" 💻  -  Full Stack Developer. "
+                textStyle={{
+                  fontSize:'1rem',
+                  fontWeight: 450,
+                  color: '#795548',
+                }}
+                cursorColor='#EEEEEE'
+                startDelay={7500}
+                typeSpeed={100}
+              /><br/>
+              
+              <TypeWriterEffect 
+                text=" ⚛️  -  React/React Native Dev."
+                textStyle={{
+                  fontSize:'1rem',
+                  fontWeight: 450,
+                  color: '#795548',
+                }}
+                cursorColor='#EEEEEE'
+                startDelay={11500}
+                typeSpeed={100}
+              /><br/>
+              
+              
+              <TypeWriterEffect 
+                text=" 📚  -  SCRUM Methodologies. "
+                textStyle={{
+                  fontSize:'1rem',
+                  fontWeight: 450,
+                  color: '#795548',
+                }}
+                cursorColor='#EEEEEE'
+                startDelay={15000}
+                typeSpeed={100}
+              /><br/>
+>>>>>>> develop
               
             </CardContent>
           </Card>
@@ -71,8 +112,6 @@ const useStyles = makeStyles((theme) =>({
     cardContainer: {
       position: 'relative',
       marginTop: theme.spacing(2.5),
-      // fontWeight: 450,
-      // color: '#795548',
       backgroundColor: '#EEEEEE',
       border: 'solid #D7A86E 1.8px',
       width: '85vw',
@@ -94,7 +133,8 @@ const useStyles = makeStyles((theme) =>({
       borderRadius: '50%',
     },
     cardContent: {
-
+      // position: 'relative',
+      // paddingLeft: theme.spacing(4),
     },
 
   }))
