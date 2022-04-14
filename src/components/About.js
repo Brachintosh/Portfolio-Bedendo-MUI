@@ -1,5 +1,7 @@
 import React from 'react'
-import { makeStyles, Typography } from "@material-ui/core";
+import {
+   makeStyles, Typography, Card, CardMedia 
+  } from "@material-ui/core";
 
 const About = ({ title, dark, id }) => {
 
@@ -9,6 +11,11 @@ const classes = useStyles();
     <div className={`${classes.section} ${dark && classes.sectionDark}`}>
         <div className={classes.sectionContent} id={id} >
           <Typography variant="h3" >{title}:</Typography>
+
+          <Card className={classes.cardContainer} >
+            <CardMedia className={classes.cardMedia} />
+          </Card>
+
         </div>
     </div>
   )
