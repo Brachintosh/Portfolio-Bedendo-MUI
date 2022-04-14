@@ -12,34 +12,32 @@ import InfoTwoToneIcon from '@material-ui/icons/InfoTwoTone';
 import MenuIcon from  '@material-ui/icons/Menu';
 import CancelIcon from '@material-ui/icons/Cancel';
 
-const linksNav = [
-    {
-        id: 'about',
-        text: 'About',
-        icon: <InfoTwoToneIcon fontSize='large' />,
-    },
-    {
-        id: 'skills',
-        text: 'Skills',
-        icon: <EmojiObjectsTwoToneIcon fontSize='large' />,
-    },
-    {
-        id: 'work',
-        text: 'My Works',
-        icon: <BuildTwoToneIcon fontSize='large' />,
-    },
-    {
-        id: 'contact',
-        text: 'Get in touch',
-        icon: <ContactMailTwoToneIcon fontSize='large' />,
-    },
-]
-
 const NavBar = () => {
-
+const [open, setOpen] = useState(false);
 const classes = useStyles();
 
-const [open, setOpen] = useState(false);
+const linksNav = [
+  {
+      id: 'about',
+      text: 'About',
+      icon: <InfoTwoToneIcon fontSize='large' />,
+  },
+  {
+      id: 'skills',
+      text: 'Skills',
+      icon: <EmojiObjectsTwoToneIcon fontSize='large' className={classes.lightIcon} />,
+  },
+  {
+      id: 'work',
+      text: 'My Works',
+      icon: <BuildTwoToneIcon fontSize='large' />,
+  },
+  {
+      id: 'contact',
+      text: 'Get in touch',
+      icon: <ContactMailTwoToneIcon fontSize='large' />,
+  },
+]
 
   return (
   <>
@@ -172,15 +170,18 @@ const useStyles = makeStyles((theme) =>({
       top: 35,
       right: 18,
     },
+    lightIcon: {
+      color: '#FDD835',
+    },
     linksDrawer: {
       [theme.breakpoints.down("sm")]:{
         width: '58vw',
-        margin: theme.spacing(2.7, 3.3, 0, 0),
+        margin: theme.spacing(2, 2.3, 0, 0),
       },
       width: '30vw',
       // Icons style:
       "& h4": {
-        margin: theme.spacing(8, 0, 0, 4),
+        margin: theme.spacing(8, 0, 0, 2),
         fontSize: '1.4rem',
         fontWeight: 'bold',
         color: '#A0522D',
