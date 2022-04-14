@@ -41,6 +41,7 @@ const classes = useStyles();
                 cursorColor='#EEEEEE'
                 startDelay={3800}
                 typeSpeed={100}
+                
               />
               
             </CardContent>
