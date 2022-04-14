@@ -41,12 +41,16 @@ const useStyles = makeStyles((theme) =>({
     sectionContent: {
       maxWidth: "85vw",
       margin: "0 auto",
+      marginTop: 10,
     },
     cardContainer: {
+      marginTop: theme.spacing(2.5),
+      color: '#795548',
       border: 'solid #D7A86E 1.8px',
       width: '85vw',
       height: '70vh',
       display: 'flex',
+      backgroundColor: '#EEEEEE'
     },
     boxImg: {
       width: '50vw',
