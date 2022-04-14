@@ -72,8 +72,9 @@ const [open, setOpen] = useState(false);
   <div className={classes.drawer} >
     <Drawer anchor="right" open={open} onClose={() => setOpen(false) } >
       {/* EXIT.ICON */}
+      <div className={classes.menuDrawerText}> <u> MENU: </u> </div>
       <IconButton className={classes.menuDrawer} onClick={() => setOpen(false)}  >
-        <CancelIcon />
+        <CancelIcon fontSize='large' className={classes.cancelIcon} />
       </IconButton>
       <Divider />
 
@@ -155,8 +156,21 @@ const useStyles = makeStyles((theme) =>({
         right: 20,
       }
     },
+    menuDrawerText: {
+      margin: theme.spacing(3, 0, 0, 4),
+      fontSize: '1.4rem',
+      fontWeight: 'bold',
+      color: '#A0522D',
+      textShadow: "1px .6px #FCFF53",
+    },
     drawer: {
       backgroundColor: '#FCFF53',
+    },
+    cancelIcon: {
+      color: 'tomato',
+      position: 'absolute',
+      top: 35,
+      right: 18,
     },
     linksDrawer: {
       [theme.breakpoints.down("sm")]:{
