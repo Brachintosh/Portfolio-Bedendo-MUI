@@ -20,7 +20,7 @@ const linksNav = [
   {
       id: 'about',
       text: 'About',
-      icon: <InfoTwoToneIcon fontSize='large' />,
+      icon: <InfoTwoToneIcon fontSize='large' className={classes.infoIcon} />,
   },
   {
       id: 'skills',
@@ -35,7 +35,7 @@ const linksNav = [
   {
       id: 'contact',
       text: 'Get in touch',
-      icon: <ContactMailTwoToneIcon fontSize='large' />,
+      icon: <ContactMailTwoToneIcon fontSize='large' className={classes.contactIcon} />,
   },
 ]
 
@@ -172,6 +172,12 @@ const useStyles = makeStyles((theme) =>({
     },
     lightIcon: {
       color: '#FDD835',
+    },
+    infoIcon: {
+      color: '#03A9F4',
+    },
+    contactIcon: {
+      color: '#A64B2A',
     },
     linksDrawer: {
       [theme.breakpoints.down("sm")]:{
