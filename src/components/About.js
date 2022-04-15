@@ -116,24 +116,26 @@ const useStyles = makeStyles((theme) =>({
       marginTop: 10,
     },
     cardContainer: {
+      display: 'flex',
       position: 'relative',
       marginTop: theme.spacing(2.5),
       backgroundColor: '#EEEEEE',
       border: 'solid #D7A86E 1.8px',
       width: '85vw',
-      height: '70vh',
-      display: 'flex',
+      height: '80vh',
     },
     boxImg: {
       position: 'relative',
       width: '50vw',
       height: '50vh',
       display: 'flex',
-      justifyContent: 'start',
+      justifyContent: 'center',
       alignSelf: 'center',
     },
     imgAuthor: {
       [theme.breakpoints.down('sm', 'm')]:{
+        display: 'flex',
+        justifyContent: 'start',
         width: '40vw',
         height: 'auto',
         alignSelf: 'center',
@@ -149,12 +151,12 @@ const useStyles = makeStyles((theme) =>({
     },
     cardContent: {
       [theme.breakpoints.down('sm')]:{
-        width: '60vw',
+        width: '70vw',
         height: 'auto',
         fontWeight: 650,
       },
       [theme.breakpoints.down('xs')]:{
-        width: '40vw',
+        width: '50vw',
         height: 'auto',
         fontSize: '.75rem',
       },
