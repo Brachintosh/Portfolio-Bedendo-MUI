@@ -8,7 +8,7 @@ const classes = useStyles();
   return (
     <div className={`${classes.section} ${dark && classes.sectionDark}`}>
         <div className={classes.sectionContent} id={id} >
-          <Typography className={classes.fontTitle} variant="h3" >*<u>{title}:</u></Typography>
+          <Typography className={classes.fontTitle} variant="h3" >-{" "}{title}:</Typography>
         </div>
     </div>
   )
@@ -28,10 +28,12 @@ const useStyles = makeStyles((theme) =>({
       [theme.breakpoints.down('xs')]:{
         fontSize: '1.75rem',
       },
-      fontFamily: 'Modak',
-        textShadow: "1px .6px #FCFF53",
-        letterSpacing: "2px",
-      },
+    fontFamily: 'Beau Rivage ',
+    marginTop: theme.spacing(2),
+    fontWeight: 600,
+    textShadow: "1.5px .8px #D7A86E",
+    letterSpacing: "2px",
+    },
     sectionDark:{
         background: "#361500",
         color: 'rgb(255, 248, 220)',

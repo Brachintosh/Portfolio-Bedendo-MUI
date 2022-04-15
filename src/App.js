@@ -20,7 +20,7 @@ const classes = useStyles();
       <About id="about" title="About Me" dark={true} />
       <Skills id="skills" title="My Coding Experience" dark={false} />
       <MyWork id="work" title="My Works" dark={true} />
-      <ContactMe id="contact" title="Get in touch" dark={false} />
+      <ContactMe id="contact" title="Get in Touch" dark={false} />
       <FooterBrand />
     </div>
 
