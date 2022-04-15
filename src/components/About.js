@@ -138,6 +138,10 @@ const useStyles = makeStyles((theme) =>({
         height: 'auto',
         alignSelf: 'center',
       },
+      [theme.breakpoints.down('xs')]:{
+        width: '30vw',
+        height: 'auto',
+      },
       margin: theme.spacing(0.8),
       height: 'auto',
       border: 'solid #D7A86E 1.2px',
@@ -148,6 +152,11 @@ const useStyles = makeStyles((theme) =>({
         width: '60vw',
         height: 'auto',
         fontWeight: 650,
+      },
+      [theme.breakpoints.down('xs')]:{
+        width: '40vw',
+        height: 'auto',
+        fontSize: '.75rem',
       },
     },
 
