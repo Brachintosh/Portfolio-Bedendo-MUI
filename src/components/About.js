@@ -12,8 +12,8 @@ const classes = useStyles();
   return (
     <div className={`${classes.section} ${dark && classes.sectionDark}`}>
         <div className={classes.sectionContent} id={id} >
-          <Typography variant="h3" >{title}:</Typography>
-
+          <Typography className={classes.fontTitle}  variant="h3" >*<u>{title}:</u></Typography>
+      
           <Card className={classes.cardContainer} >
             <Box className={classes.boxImg} >
               <img src={author} title="picture-brachintosh" className={classes.imgAuthor} />
@@ -69,7 +69,7 @@ const classes = useStyles();
               
               
               <TypeWriterEffect 
-                text=" 📚  -  SCRUM Methodologies. "
+                text=" ( 📚 ) => ( SCRUM Methodologies() )"
                 textStyle={{
                   fontSize:'1rem',
                   fontWeight: 450,
@@ -94,6 +94,17 @@ const useStyles = makeStyles((theme) =>({
     section:{
       paddingTop: '0.5em',
       minHeight:"100vh",
+    },
+    fontTitle:{
+      [theme.breakpoints.down('sm', 'm')]:{
+        fontSize: '2.3rem',
+      },
+      [theme.breakpoints.down('xs')]:{
+        fontSize: '1.75rem',
+      },
+    fontFamily: 'Modak ',
+    textShadow: "1px .6px #FCFF53",
+    letterSpacing: "2px",
     },
     sectionDark:{
       background: "#361500",
@@ -122,14 +133,22 @@ const useStyles = makeStyles((theme) =>({
       alignSelf: 'center',
     },
     imgAuthor: {
+      [theme.breakpoints.down('sm', 'm')]:{
+        width: '40vw',
+        height: 'auto',
+        alignSelf: 'center',
+      },
       margin: theme.spacing(0.8),
       height: 'auto',
       border: 'solid #D7A86E 1.2px',
       borderRadius: '50%',
     },
     cardContent: {
-      // position: 'relative',
-      // paddingLeft: theme.spacing(4),
+      [theme.breakpoints.down('sm')]:{
+        width: '60vw',
+        height: 'auto',
+        fontWeight: 650,
+      },
     },
 
   }))

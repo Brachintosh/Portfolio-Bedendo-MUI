@@ -45,7 +45,7 @@ const linksNav = [
         <Toolbar className={classes.toolbar} >
           <Typography variant="h6" component="div" className={classes.nameStyle}>
             <img src={logo} className={classes.logo} alt="No-connection" />
-            Brian Bedendo
+            Brian E. Bedendo
           </Typography>
 
           <List className={classes.menu}>
@@ -109,6 +109,9 @@ const useStyles = makeStyles((theme) =>({
         display: 'flex',
         alignContent: 'center',
         color:'#A0522D',
+        fontFamily: 'Yeseva One cursive',
+        textShadow: "1px .6px #FCFF53",
+        letterSpacing: ".9px",
         transition: 'all ease-in-out .7s',
         textShadow: ".6px .5px #FCFF53",
         "&:hover, &.Mui-focusVisible": {
