@@ -180,6 +180,10 @@ const useStyles = makeStyles((theme) =>({
       },
     },
     bntResume: {
+      [theme.breakpoints.down("sm")]: {
+        bottom: 32,
+        right: 40,
+      },
       position: 'absolute',
       bottom: '3rem',
       right: '4rem',
