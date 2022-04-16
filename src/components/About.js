@@ -80,6 +80,19 @@ const classes = useStyles();
                 startDelay={15000}
                 typeSpeed={100}
               /><br/>
+
+              <Typography variant="h6" className={classes.descriptionText} >
+              👨‍💻 {"  - "}<u> About me</u>:<br/>
+                  {"  - "}Full stack web developer.<br/> 🚀  I consider myself a curious person, who likes to investigate on their own, an eternal self-taught student with an insatiable thirst for knowledge.<br/>
+                  ⚡ Persevering and determined in the face of any obstacle to overcome, with a good capacity for integration when working as a team. Critical and organized, to keep track of tasks. Always curious in other languages ​​and cultures.<br/><br/>
+
+                  💻 {"  - "}<u>Tech Skills</u>:<br/><br/>
+                  ★ design: #figma.<br/>
+                  ★ back-end: #nodejs - #express - #sequelize.<br/>
+                  ★ front-end: #javascript - #react - #redux - #css - #tailwind.<br/>
+                  ★ data-base: #postgreSQL - #postman.<br/>
+                  ★ networking: #git - #github - #scrum.<br/>
+              </Typography>
               
             </CardContent>
           
@@ -104,7 +117,7 @@ const useStyles = makeStyles((theme) =>({
     section:{
       paddingTop: '0.5em',
       minHeight:"fit",
-      paddingBottom: '4rem',
+      paddingBottom: '3rem',
     },
     fontTitle:{
       [theme.breakpoints.down('sm', 'm')]:{
@@ -136,8 +149,14 @@ const useStyles = makeStyles((theme) =>({
       border: 'solid #D7A86E 2.4px',
       borderRadius: '12px',
       boxShadow: "1.2px .8px 8px .7px #EEEEEE",
-      width: '85vw',
-      height: '80vh',
+      width: '86vw',
+      height: 'fit',
+      paddingBottom: theme.spacing(20),
+    },
+    descriptionText: {
+      color: "#6F574A",
+      textShadow: "1px .8px #D7A86E" ,
+      fontWeight: 450,
     },
     boxImg: {
       position: 'relative',
