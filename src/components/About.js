@@ -217,4 +217,5 @@ const useStyles = makeStyles((theme) =>({
 
   }))
 
-export default About
+
+export default About;
