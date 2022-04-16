@@ -103,7 +103,8 @@ const useStyles = makeStyles((theme) =>({
     // ClassName:
     section:{
       paddingTop: '0.5em',
-      minHeight:"100vh",
+      minHeight:"fit",
+      paddingBottom: '4rem',
     },
     fontTitle:{
       [theme.breakpoints.down('sm', 'm')]:{
@@ -132,7 +133,9 @@ const useStyles = makeStyles((theme) =>({
       position: 'relative',
       marginTop: theme.spacing(2.5),
       backgroundColor: '#EEEEEE',
-      border: 'solid #D7A86E 1.8px',
+      border: 'solid #D7A86E 2.4px',
+      borderRadius: '12px',
+      boxShadow: "1.2px .8px 8px .7px #EEEEEE",
       width: '85vw',
       height: '80vh',
     },
@@ -160,6 +163,9 @@ const useStyles = makeStyles((theme) =>({
       height: 'auto',
       border: 'solid #D7A86E 1.2px',
       borderRadius: '50%',
+      // boxShadow: "2px 3px 7px 1px #795548",
+      // boxShadow: "7px 6px 10px 2px  #FDD835",
+      boxShadow: "3px 3px 10px 2px #BDBDBD",
     },
     cardContent: {
       [theme.breakpoints.down('sm')]:{
@@ -175,10 +181,12 @@ const useStyles = makeStyles((theme) =>({
     },
     bntResume: {
       position: 'absolute',
-      bottom: '3.5rem',
-      right: '3.5rem',
+      bottom: '3rem',
+      right: '4rem',
+      padding: theme.spacing(1.8),
       backgroundColor: '#D7A86E',
       border: ' solid .8px rgb(255, 248, 220)',
+      borderRadius: '12px',
       transition: 'all .45s',
       boxShadow: "2px 3px 4px 1px #795548",
       "& a": {
