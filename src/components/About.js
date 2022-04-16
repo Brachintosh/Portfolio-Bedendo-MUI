@@ -5,6 +5,17 @@ import {
   } from "@material-ui/core";
 import author from '../images/brachintosh-Img.jpg';
 import resumeBedendo from '../images/Bedendo Resume.pdf';
+import jsIcon from '../images/icons8-javascript.gif';
+import reactIcon from '../images/icons8-react.svg';
+import reduxIcon from '../images/icons8-redux.svg';
+import htmlIcon from '../images/icons8-html-5.svg';
+import cssIcon from '../images/icons8-css3.svg';
+import tailwindIcon from '../images/Tailwind_CSS_Logo.svg.png';
+import mUI_Icon from '../images/material-ui-logo1.png';
+import gitIcon from '../images/icons8-git.svg';
+import githubIcon from '../images/icons8-github-144.png';
+import scrumIcon from '../images/icons8-scrum-64.png';
+import postgreIcon from '../images/icons8-postgresql.svg';
 
 const About = ({ title, dark, id }) => {
 
@@ -103,9 +114,25 @@ const classes = useStyles();
                   💻 {"  - "}<u>Tech Skills</u>:<br/>
                   ★ Design: #figma<br/>
                   ★ Back-end: #nodejs - #express - #sequelize<br/>
-                  ★ Front-end: #javascript - #react - #redux - #css - #tailwind - #Material UI<br/>
-                  ★ Data-base: #postgreSQL - #postman<br/>
-                  ★ Networking: #git - #github - #scrum<br/>
+                  ★ Front-end: {" "}
+                  {" "}<img src={jsIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem',  }}/> JavaScript -{" "}
+                  <img src={reactIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> React -{" "}
+                  <img src={reduxIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> Redux -{" "}
+                  <img src={htmlIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> HTML5 -{" "}
+                  <img src={cssIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> CSS3 -{" "}{" "}
+                  <img src={tailwindIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> Tailwind -{" "}
+                  <img src={mUI_Icon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> Material UI {" "}<br/>
+                  ★ Data-base: {" "}
+                  <img src={postgreIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> PostgreSQL {" "}
+                   - #postman<br/>
+                  ★ Networking: {" "}
+                  <img src={gitIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> Git -{" "}{" "}
+                  <img src={githubIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> GitHub -{" "}{" "}
+                  <img src={scrumIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> SCRUM{" "}{" "}<br/>
+              </Typography>
+
+              <Typography>
+                
               </Typography>
               
             </CardContent>
