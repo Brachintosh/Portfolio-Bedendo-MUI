@@ -86,12 +86,12 @@ const classes = useStyles();
                   {"  - "}Full stack web developer.<br/> 🚀  I consider myself a curious person, who likes to investigate on their own, an eternal self-taught student with an insatiable thirst for knowledge.<br/>
                   ⚡ Persevering and determined in the face of any obstacle to overcome, with a good capacity for integration when working as a team. Critical and organized, to keep track of tasks. Always curious in other languages ​​and cultures.<br/><br/>
 
-                  💻 {"  - "}<u>Tech Skills</u>:<br/><br/>
-                  ★ design: #figma.<br/>
-                  ★ back-end: #nodejs - #express - #sequelize.<br/>
-                  ★ front-end: #javascript - #react - #redux - #css - #tailwind.<br/>
-                  ★ data-base: #postgreSQL - #postman.<br/>
-                  ★ networking: #git - #github - #scrum.<br/>
+                  💻 {"  - "}<u>Tech Skills</u>:<br/>
+                  ★ Design: #figma<br/>
+                  ★ Back-end: #nodejs - #express - #sequelize<br/>
+                  ★ Front-end: #javascript - #react - #redux - #css - #tailwind - #Material UI<br/>
+                  ★ Data-base: #postgreSQL - #postman<br/>
+                  ★ Networking: #git - #github - #scrum<br/>
               </Typography>
               
             </CardContent>
