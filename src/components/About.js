@@ -1,9 +1,10 @@
 import React from 'react';
 import TypeWriterEffect from 'react-typewriter-effect';
 import {
-   makeStyles, Typography, Card, CardMedia, CardContent, Box
+   makeStyles, Typography, Card, CardActions, CardContent, Box, Button
   } from "@material-ui/core";
 import author from '../images/brachintosh-Img.jpg';
+import resumeBedendo from '../images/Bedendo Resume.pdf';
 
 const About = ({ title, dark, id }) => {
 
@@ -81,6 +82,15 @@ const classes = useStyles();
               /><br/>
               
             </CardContent>
+          
+            <CardActions>
+              <Button className={classes.bntResume} variant='contained' size='large'>
+                <a href={resumeBedendo} download >
+                  Get Resume
+                </a>
+              </Button>
+            </CardActions>
+
           </Card>
 
         </div>
@@ -161,6 +171,35 @@ const useStyles = makeStyles((theme) =>({
         width: '50vw',
         height: 'auto',
         fontSize: '.75rem',
+      },
+    },
+    bntResume: {
+      position: 'absolute',
+      bottom: '3.5rem',
+      right: '3.5rem',
+      backgroundColor: '#D7A86E',
+      border: ' solid .8px rgb(255, 248, 220)',
+      transition: 'all .45s',
+      boxShadow: "2px 3px 4px 1px #795548",
+      "& a": {
+        textDecoration: 'none',
+        color: 'rgb(255, 248, 220)',
+        fontWeight: 700,
+        textShadow: "1.5px .8px #795548",
+        letterSpacing: "1.5px",
+      },
+      "&:hover":{
+        backgroundColor: 'rgb(255, 248, 220)',
+        border: 'solid #D7A86E 2px',
+        boxShadow: "2px 3px 4px 1px #795548",
+      },
+      "& a:hover": {
+        transition: 'all .45s',
+        textDecoration: 'none',
+        textShadow: "1.5px .8px #D7A86E",
+        color: "#795548",
+        fontWeight: 700,
+        letterSpacing: "1.5px",
       },
     },
 
