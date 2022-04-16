@@ -23,7 +23,7 @@ const classes = useStyles();
               <TypeWriterEffect 
                 text="Hi,I'm Brian Ezequiel Bedendo."
                 textStyle={{
-                  fontSize:'1.5rem',
+                  fontSize:'1.6rem',
                   fontWeight: 600,
                   color: '#795548',
                 }}
@@ -33,9 +33,9 @@ const classes = useStyles();
               /><br/>
               
               <TypeWriterEffect 
-                text=" 🚀  -  Enthusiastic Dev.   "
+                text=" 💻  -  Full Stack Developer. "
                 textStyle={{
-                  fontSize:'1rem',
+                  fontSize:'1.2rem',
                   fontWeight: 450,
                   color: '#795548',
                 }}
@@ -43,11 +43,11 @@ const classes = useStyles();
                 startDelay={4000}
                 typeSpeed={100}
               /><br/>
-              
+
               <TypeWriterEffect 
-                text=" 💻  -  Full Stack Developer. "
+                text=" ✍️  -  Enthusiastic Dev.   "
                 textStyle={{
-                  fontSize:'1rem',
+                  fontSize:'1.2rem',
                   fontWeight: 450,
                   color: '#795548',
                 }}
@@ -59,7 +59,7 @@ const classes = useStyles();
               <TypeWriterEffect 
                 text=" ⚛️  -  React/React Native Dev."
                 textStyle={{
-                  fontSize:'1rem',
+                  fontSize:'1.2rem',
                   fontWeight: 450,
                   color: '#795548',
                 }}
@@ -70,9 +70,9 @@ const classes = useStyles();
               
               
               <TypeWriterEffect 
-                text=" ( 📚 ) => ( SCRUM Methodologies() )"
+                text=" 📚  - SCRUM Methodologies."
                 textStyle={{
-                  fontSize:'1rem',
+                  fontSize:'1.2rem',
                   fontWeight: 450,
                   color: '#795548',
                 }}
@@ -80,6 +80,20 @@ const classes = useStyles();
                 startDelay={15000}
                 typeSpeed={100}
               /><br/>
+              
+              <TypeWriterEffect 
+                text=" ✅ - Knack of building applications with Front-end and Back-end operations."
+                textStyle={{
+                  fontSize:'1.2rem',
+                  fontWeight: 450,
+                  color: '#795548',
+                }}
+                cursorColor='#EEEEEE'
+                startDelay={18500}
+                typeSpeed={100}
+              /><br/>
+
+
 
               <Typography variant="h6" className={classes.descriptionText} >
               👨‍💻 {"  - "}<u> About me</u>:<br/>
