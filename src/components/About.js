@@ -1,11 +1,11 @@
 import React from 'react';
 import TypeWriterEffect from 'react-typewriter-effect';
 import {
-   makeStyles, Typography, Card, CardActions, CardContent, Box, Button
+   makeStyles, Typography, Card, CardActions, CardContent, Box, Button, Divider
   } from "@material-ui/core";
 import author from '../images/brachintosh-Img.jpg';
 import resumeBedendo from '../images/Bedendo Resume.pdf';
-import jsIcon from '../images/icons8-javascript.gif';
+import jsIcon from '../images/icons8-javascript2.svg';
 import reactIcon from '../images/icons8-react.svg';
 import reduxIcon from '../images/icons8-redux.svg';
 import htmlIcon from '../images/icons8-html-5.svg';
@@ -15,11 +15,23 @@ import mUI_Icon from '../images/material-ui-logo1.png';
 import gitIcon from '../images/icons8-git.svg';
 import githubIcon from '../images/icons8-github-144.png';
 import scrumIcon from '../images/icons8-scrum-64.png';
+import scrumAgile_Icon from '../images/icons8-scrum-64.png';
 import postgreIcon from '../images/icons8-postgresql.svg';
+import postmanIcon from '../images/postmqnICON2.png';
+import nodeJsIcon from '../images/nodeJS-icon2.png';
+import figmaIcon from '../images/icons8-figma2.svg';
+import appIcon from '../images/apps2.png';
+import codingIcon from '../images/binary-code1.png';
+import blocksIcon from  '../images/blocks1.png';
+import rocketIcon from '../images/rocket2.png';
+import sequelizeIcon from '../images/sequelizeIcon.png';
+import expressIcon from '../images/expresIcon.png';
 
 const About = ({ title, dark, id }) => {
 
 const classes = useStyles();
+
+const scrumIMG = <img src={scrumAgile_Icon} alt='img-not-found' style={{height:'2rem', width:'2rem',  }}/>
 
   return (
     <div className={`${classes.section} ${dark && classes.sectionDark}`}>
@@ -30,11 +42,12 @@ const classes = useStyles();
             <Box className={classes.boxImg} >
               <img src={author} title="picture-brachintosh" className={classes.imgAuthor} />
             </Box>
+
             <CardContent className={classes.cardContent} >
               <TypeWriterEffect 
-                text="Hi,I'm Brian Ezequiel Bedendo."
+                text="Hi, I'm Brian Ezequiel Bedendo."
                 textStyle={{
-                  fontSize:'1.6rem',
+                  fontSize:'1.76rem',
                   fontWeight: 600,
                   color: '#795548',
                 }}
@@ -43,6 +56,7 @@ const classes = useStyles();
                 typeSpeed={100}
               /><br/>
               
+              {/* 
               <TypeWriterEffect 
                 text=" 💻  -  Full Stack Developer. "
                 textStyle={{
@@ -102,30 +116,70 @@ const classes = useStyles();
                 cursorColor='#EEEEEE'
                 startDelay={18500}
                 typeSpeed={100}
+              /><br/> */}
+
+            {/* MULTI-TEXT TYPE-WRITER */}
+              <TypeWriterEffect
+                      textStyle={{
+                        // color: '#3F3D56',
+                        color:'#795548',
+                        fontWeight: 500,
+                        fontSize: '1.3em',
+                      }}
+                      startDelay={3600}
+                      cursorColor="#EEEEEE"
+                      multiText={[
+                        '- Knack of building applications with Front-end and Back-end operations.',
+                        ' - SCRUM Methodologies.',
+                        '⚛️  -  React/React Native Dev.',
+                        '✍️  -  Enthusiastic Dev.',
+                        '💻  -  Full Stack Developer. ',
+                      ]}
+                      multiTextDelay={1200}
+                      typeSpeed={100}
               /><br/>
 
 
-
               <Typography variant="h6" className={classes.descriptionText} >
-              👨‍💻 {"  - "}<u> About me</u>:<br/>
-                  {"  - "}Full stack web developer.<br/> 🚀  I consider myself a curious person, who likes to investigate on their own, an eternal self-taught student with an insatiable thirst for knowledge.<br/>
-                  ⚡ Persevering and determined in the face of any obstacle to overcome, with a good capacity for integration when working as a team. Critical and organized, to keep track of tasks. Always curious in other languages ​​and cultures.<br/><br/>
+                <u style={{display:'flex', flexDirection:'row', justifyContent: 'flex-start', alignItems: 'center', paddingBottom:'2%', }} >
+                  <img src={blocksIcon} alt='img-not-found' style={{display:'flex', height:'3rem', width:'3rem', paddingRight:'1rem',   }}/>{"   "}
+                  About Me:
+                </u>
+                  {/* {"  ➪ "}Full stack web developer.<br/>  */}
+                  <span style={{display:'flex', flexDirection:'row', justifyContent: 'flex-start', alignItems: 'center', paddingBottom:'2%', }} >
+                    <img src={appIcon} alt='img-not-found' style={{display:'flex', height:'3rem', width:'3rem', paddingRight:'1rem',   }}/>{"   "}
+                    {"   "}I consider myself a curious person, who likes to investigate on their own, an eternal self-taught student with an insatiable thirst for knowledge.<br/>
+                  </span>
 
-                  💻 {"  - "}<u>Tech Skills</u>:<br/>
-                  ★ Design: #figma<br/>
-                  ★ Back-end: #nodejs - #express - #sequelize<br/>
-                  ★ Front-end: {" "}
+                  <span style={{display:'flex', flexDirection:'row', justifyContent: 'flex-start', alignItems: 'center', paddingBottom:'2%', }} >
+                    <img src={rocketIcon} alt='img-not-found' style={{display:'flex', height:'3rem', width:'3rem', paddingRight:'1rem',   }}/>{"   "}
+                    {"   "}Persevering and determined in the face of any obstacle to overcome, with a good capacity for integration when working as a team. Critical and organized, to keep track of tasks. Always curious in other languages ​​and cultures.<br/><br/>
+                  </span>
+                  
+
+                <u style={{display:'flex', flexDirection:'row', justifyContent: 'flex-start', alignItems: 'center', paddingBottom:'2%', }} >
+                  <img src={codingIcon} alt='img-not-found' style={{display:'flex', height:'3rem', width:'3rem', paddingRight:'1rem',   }}/>{"   "}
+                  Tech Skills:
+                </u>
+
+                  ⋆{" "}Design: 
+                  {" "}<img src={figmaIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem',  }}/> Figma.<br/><Divider style={{width:'85%', margin: '1.5%', display: 'flex', position:'center'}} />
+                  ⋆{" "}Back-end: {" "}{" "}
+                  <img src={nodeJsIcon} alt='img-not-found' style={{height:'1.7rem', width:'6.5rem' }}/> Node.js -{" "}
+                  <img src={expressIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> Express.js -{" "}
+                  <img src={sequelizeIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> Sequelize.{" "}<br/><Divider style={{width:'85%', margin: '1.5%', display: 'flex', position:'center'}} />
+                  ⋆{" "}Front-end: {" "}
                   {" "}<img src={jsIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem',  }}/> JavaScript -{" "}
                   <img src={reactIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> React -{" "}
                   <img src={reduxIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> Redux -{" "}
                   <img src={htmlIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> HTML5 -{" "}
                   <img src={cssIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> CSS3 -{" "}{" "}
-                  <img src={tailwindIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> Tailwind -{" "}
-                  <img src={mUI_Icon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> Material UI {" "}<br/>
-                  ★ Data-base: {" "}
+                  <img src={mUI_Icon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> Material UI -{" "}{" "}{" "}
+                  <img src={tailwindIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> Tailwind {" "}<br/><Divider style={{width:'85%', margin: '1.5%', display: 'flex', position:'center'}} />
+                  ⋆{" "}Data-base: {" "}
                   <img src={postgreIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> PostgreSQL {" "}
-                   - #postman<br/>
-                  ★ Networking: {" "}
+                  <img src={postmanIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> Postman {" "}<br/><Divider style={{width:'85%', margin: '1.5%', display: 'flex', position:'center'}} />
+                  ⋆{" "}Networking: {" "}
                   <img src={gitIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> Git -{" "}{" "}
                   <img src={githubIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> GitHub -{" "}{" "}
                   <img src={scrumIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> SCRUM{" "}{" "}<br/>
@@ -195,7 +249,7 @@ const useStyles = makeStyles((theme) =>({
       paddingBottom: theme.spacing(20),
     },
     descriptionText: {
-      color: "#6F574A",
+      color: "#795548",
       textShadow: "1px .8px #D7A86E" ,
       fontWeight: 450,
     },
