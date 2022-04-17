@@ -45,6 +45,10 @@ return (
 const useStyles = makeStyles((theme) =>({
     // ClassName:
     toTop: {
+        [theme.breakpoints.down('sm')]: {
+            bottom: '4.5em',
+            right: '4.5%',
+        },
         zIndex: 2,
         position: 'fixed',
         bottom: '3em',
