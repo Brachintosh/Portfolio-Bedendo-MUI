@@ -5,6 +5,8 @@ import {
   } from "@material-ui/core";
 import author from '../images/brachintosh-Img.jpg';
 import resumeBedendo from '../images/Bedendo Resume.pdf';
+import resumeIcon from '../images/download-resume-1.png';
+import downloadIcon from '../images/download-icon1.png';
 import jsIcon from '../images/icons8-javascript2.svg';
 import reactIcon from '../images/icons8-react.svg';
 import reduxIcon from '../images/icons8-redux.svg';
@@ -14,7 +16,7 @@ import tailwindIcon from '../images/Tailwind_CSS_Logo.svg.png';
 import mUI_Icon from '../images/material-ui-logo1.png';
 import gitIcon from '../images/icons8-git.svg';
 import githubIcon from '../images/icons8-github-144.png';
-import scrumIcon from '../images/icons8-scrum-64.png';
+import scrumIcon from '../images/scrum2icon.png';
 import scrumAgile_Icon from '../images/icons8-scrum-64.png';
 import postgreIcon from '../images/icons8-postgresql.svg';
 import postmanIcon from '../images/postmqnICON2.png';
@@ -30,8 +32,8 @@ import expressIcon from '../images/expresIcon.png';
 const About = ({ title, dark, id }) => {
 
 const classes = useStyles();
-
-const scrumIMG = <img src={scrumAgile_Icon} alt='img-not-found' style={{height:'2rem', width:'2rem',  }}/>
+const blocks = <img src={blocksIcon} alt='img-not-found' style={{display:'flex', height:'3rem', width:'3rem', paddingRight:'1rem',   }}/>
+const codeBinIcon = <img src={codingIcon} alt='img-not-found' style={{display:'flex', height:'3rem', width:'3rem', paddingRight:'1rem',   }}/>;
 
   return (
     <div className={`${classes.section} ${dark && classes.sectionDark}`}>
@@ -44,79 +46,17 @@ const scrumIMG = <img src={scrumAgile_Icon} alt='img-not-found' style={{height:'
             </Box>
 
             <CardContent className={classes.cardContent} >
-              <TypeWriterEffect 
+              <TypeWriterEffect  
                 text="Hi, I'm Brian Ezequiel Bedendo."
                 textStyle={{
-                  fontSize:'1.76rem',
+                  fontSize:'1.6rem',
                   fontWeight: 600,
                   color: '#795548',
                 }}
                 cursorColor='#EEEEEE'
                 startDelay={200}
-                typeSpeed={100}
+                typeSpeed={100}               
               /><br/>
-              
-              {/* 
-              <TypeWriterEffect 
-                text=" 💻  -  Full Stack Developer. "
-                textStyle={{
-                  fontSize:'1.2rem',
-                  fontWeight: 450,
-                  color: '#795548',
-                }}
-                cursorColor='#EEEEEE'
-                startDelay={4000}
-                typeSpeed={100}
-              /><br/>
-
-              <TypeWriterEffect 
-                text=" ✍️  -  Enthusiastic Dev.   "
-                textStyle={{
-                  fontSize:'1.2rem',
-                  fontWeight: 450,
-                  color: '#795548',
-                }}
-                cursorColor='#EEEEEE'
-                startDelay={7500}
-                typeSpeed={100}
-              /><br/>
-              
-              <TypeWriterEffect 
-                text=" ⚛️  -  React/React Native Dev."
-                textStyle={{
-                  fontSize:'1.2rem',
-                  fontWeight: 450,
-                  color: '#795548',
-                }}
-                cursorColor='#EEEEEE'
-                startDelay={11500}
-                typeSpeed={100}
-              /><br/>
-              
-              
-              <TypeWriterEffect 
-                text=" 📚  - SCRUM Methodologies."
-                textStyle={{
-                  fontSize:'1.2rem',
-                  fontWeight: 450,
-                  color: '#795548',
-                }}
-                cursorColor='#EEEEEE'
-                startDelay={15000}
-                typeSpeed={100}
-              /><br/>
-              
-              <TypeWriterEffect 
-                text=" ✅ - Knack of building applications with Front-end and Back-end operations."
-                textStyle={{
-                  fontSize:'1.2rem',
-                  fontWeight: 450,
-                  color: '#795548',
-                }}
-                cursorColor='#EEEEEE'
-                startDelay={18500}
-                typeSpeed={100}
-              /><br/> */}
 
             {/* MULTI-TEXT TYPE-WRITER */}
               <TypeWriterEffect
@@ -124,42 +64,43 @@ const scrumIMG = <img src={scrumAgile_Icon} alt='img-not-found' style={{height:'
                         // color: '#3F3D56',
                         color:'#795548',
                         fontWeight: 500,
-                        fontSize: '1.3em',
+                        fontSize: '1.4em',
                       }}
-                      startDelay={3600}
+                      startDelay={3650}
                       cursorColor="#EEEEEE"
                       multiText={[
-                        '- Knack of building applications with Front-end and Back-end operations.',
-                        ' - SCRUM Methodologies.',
-                        '⚛️  -  React/React Native Dev.',
-                        '✍️  -  Enthusiastic Dev.',
-                        '💻  -  Full Stack Developer. ',
+                        '- Enthusiastic Dev.',
+                        '- SCRUM Methodologies.',
+                        '- Knack of building applications.',
+                        '- React/React Native Dev.',
+                        '- Full Stack Developer. ',
                       ]}
-                      multiTextDelay={1200}
+                      multiTextDelay={1400}
                       typeSpeed={100}
+                      multiTextLoop='true'
               /><br/>
 
 
               <Typography variant="h6" className={classes.descriptionText} >
                 <u style={{display:'flex', flexDirection:'row', justifyContent: 'flex-start', alignItems: 'center', paddingBottom:'2%', }} >
-                  <img src={blocksIcon} alt='img-not-found' style={{display:'flex', height:'3rem', width:'3rem', paddingRight:'1rem',   }}/>{"   "}
-                  About Me:
+                  {blocks} About Me:
                 </u>
                   {/* {"  ➪ "}Full stack web developer.<br/>  */}
                   <span style={{display:'flex', flexDirection:'row', justifyContent: 'flex-start', alignItems: 'center', paddingBottom:'2%', }} >
-                    <img src={appIcon} alt='img-not-found' style={{display:'flex', height:'3rem', width:'3rem', paddingRight:'1rem',   }}/>{"   "}
                     {"   "}I consider myself a curious person, who likes to investigate on their own, an eternal self-taught student with an insatiable thirst for knowledge.<br/>
+                    {/* <img src={rocketIcon} alt='img-not-found' style={{display:'flex', height:'4rem', width:'4rem',  }}/>{"   "} */}
                   </span>
 
                   <span style={{display:'flex', flexDirection:'row', justifyContent: 'flex-start', alignItems: 'center', paddingBottom:'2%', }} >
-                    <img src={rocketIcon} alt='img-not-found' style={{display:'flex', height:'3rem', width:'3rem', paddingRight:'1rem',   }}/>{"   "}
-                    {"   "}Persevering and determined in the face of any obstacle to overcome, with a good capacity for integration when working as a team. Critical and organized, to keep track of tasks. Always curious in other languages ​​and cultures.<br/><br/>
+                    {"   "}Persevering and determined in the face of any obstacle to overcome, with a good capacity for integration when working as a team.
+                    Critical and organized, to keep track of tasks. Always curious in other languages ​​and cultures.
+                    {/* <img src={appIcon} alt='img-not-found' style={{display:'flex', height:'4rem', width:'4rem',  }}/>{"   "} */}
+                    <br/><br/>
                   </span>
                   
 
                 <u style={{display:'flex', flexDirection:'row', justifyContent: 'flex-start', alignItems: 'center', paddingBottom:'2%', }} >
-                  <img src={codingIcon} alt='img-not-found' style={{display:'flex', height:'3rem', width:'3rem', paddingRight:'1rem',   }}/>{"   "}
-                  Tech Skills:
+                  {codeBinIcon} Tech Skills:
                 </u>
 
                   ⋆{" "}Design: 
@@ -184,15 +125,12 @@ const scrumIMG = <img src={scrumAgile_Icon} alt='img-not-found' style={{height:'
                   <img src={githubIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> GitHub -{" "}{" "}
                   <img src={scrumIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> SCRUM{" "}{" "}<br/>
               </Typography>
-
-              <Typography>
-                
-              </Typography>
               
             </CardContent>
-          
+
             <CardActions>
               <Button className={classes.bntResume} variant='contained' size='large'>
+                <img src={downloadIcon} alt='img-not-found' style={{display:'flex', height:'2rem', width:'2rem', marginRight:'0.75rem', }}/>
                 <a href={resumeBedendo} download >
                   Get Resume
                 </a>
@@ -203,8 +141,8 @@ const scrumIMG = <img src={scrumAgile_Icon} alt='img-not-found' style={{height:'
 
         </div>
     </div>
-  )
-}
+  );
+};
 
 // Material UI settings hook >> useStyles:
 const useStyles = makeStyles((theme) =>({
@@ -249,11 +187,22 @@ const useStyles = makeStyles((theme) =>({
       paddingBottom: theme.spacing(20),
     },
     descriptionText: {
+      [theme.breakpoints.down('xs',)]: {
+        fontSize: '.75rem',
+      },
+      [theme.breakpoints.down('sm',)]: {
+        fontSize: '.9rem',
+      },
       color: "#795548",
       textShadow: "1px .8px #D7A86E" ,
       fontWeight: 450,
     },
     boxImg: {
+      [theme.breakpoints.down('sm', 'm')]:{
+        display:'none',
+        width: '0vw',
+        height: '0vh', 
+      },
       position: 'relative',
       width: '50vw',
       height: '50vh',
@@ -277,20 +226,16 @@ const useStyles = makeStyles((theme) =>({
       height: 'auto',
       border: 'solid #D7A86E 1.2px',
       borderRadius: '50%',
-      // boxShadow: "2px 3px 7px 1px #795548",
-      // boxShadow: "7px 6px 10px 2px  #FDD835",
-      boxShadow: "3px 3px 10px 2px #BDBDBD",
+      boxShadow: "4px 3px 10px 3px #BDBDBD",
     },
     cardContent: {
       [theme.breakpoints.down('sm')]:{
-        width: '70vw',
+        width: '100vw',
         height: 'auto',
-        fontWeight: 650,
       },
       [theme.breakpoints.down('xs')]:{
-        width: '50vw',
+        width: '100vw',
         height: 'auto',
-        fontSize: '.75rem',
       },
     },
     bntResume: {
@@ -329,7 +274,70 @@ const useStyles = makeStyles((theme) =>({
       },
     },
 
-  }))
-
+  }));
 
 export default About;
+
+
+// OLD TYPE WRTIER QUOTES !
+  {/* 
+  <TypeWriterEffect 
+    text=" 💻  -  Full Stack Developer. "
+    textStyle={{
+      fontSize:'1.2rem',
+      fontWeight: 450,
+      color: '#795548',
+    }}
+    cursorColor='#EEEEEE'
+    startDelay={4000}
+    typeSpeed={100}
+  /><br/>
+
+  <TypeWriterEffect 
+    text=" ✍️  -  Enthusiastic Dev.   "
+    textStyle={{
+      fontSize:'1.2rem',
+      fontWeight: 450,
+      color: '#795548',
+    }}
+    cursorColor='#EEEEEE'
+    startDelay={7500}
+    typeSpeed={100}
+  /><br/>
+  
+  <TypeWriterEffect 
+    text=" ⚛️  -  React/React Native Dev."
+    textStyle={{
+      fontSize:'1.2rem',
+      fontWeight: 450,
+      color: '#795548',
+    }}
+    cursorColor='#EEEEEE'
+    startDelay={11500}
+    typeSpeed={100}
+  /><br/>
+  
+  
+  <TypeWriterEffect 
+    text=" 📚  - SCRUM Methodologies."
+    textStyle={{
+      fontSize:'1.2rem',
+      fontWeight: 450,
+      color: '#795548',
+    }}
+    cursorColor='#EEEEEE'
+    startDelay={15000}
+    typeSpeed={100}
+  /><br/>
+  
+  <TypeWriterEffect 
+    text=" ✅ - Knack of building applications with Front-end and Back-end operations."
+    textStyle={{
+      fontSize:'1.2rem',
+      fontWeight: 450,
+      color: '#795548',
+    }}
+    cursorColor='#EEEEEE'
+    startDelay={18500}
+    typeSpeed={100}
+  /><br/> */}
