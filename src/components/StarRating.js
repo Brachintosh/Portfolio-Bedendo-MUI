@@ -10,6 +10,6 @@ const StarRating = ({stars}) => {
       </Box>
     </div>
   )
-}
+};
 
 export default StarRating;

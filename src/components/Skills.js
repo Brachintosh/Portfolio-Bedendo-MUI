@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) =>({
       paddingBottom: theme.spacing(5),
     },
     title:{
-      [theme.breakpoints.down('sm', 'm')]:{
+      [theme.breakpoints.down('sm', 'md')]:{
         fontSize: '2.3rem',
       },
       [theme.breakpoints.down('xs')]:{
@@ -83,7 +83,7 @@ const useStyles = makeStyles((theme) =>({
       flexDirection:'column'
     },
     certificateIMG: {
-      [theme.breakpoints.down('xl')]:{
+      [theme.breakpoints.down('lg')]:{
         margin: theme.spacing(2),
       },
       [theme.breakpoints.down('xs')]:{
