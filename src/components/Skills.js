@@ -12,17 +12,16 @@ const Skills = ({ dark, title, id }) => {
     <div className={`${classes.section} ${dark && classes.sectionDark}`}>
       <div className={classes.sectionContent} id={id} >
         <Typography className={classes.title} variant="h3" >-{" "}{title}:</Typography><br/>
-
-        {/* <TimeLine /><br/><TimeLine /><br/> */}
-
+        
         <Paper  className={classes.certificateContainer}>
+
           <Link color="inherit" href={certificateLink} target="_blank" className={classes.certificateLink} >
             <img src={henryCertificate} alt='certificate.pdf' title='Certificate Bedendo'
               className={classes.certificateIMG}
             />  
           </Link><br/>
             
-        {/* <TimeLine /><br/><TimeLine /><br/> */}
+        <TimeLine /><br/>
 
         </Paper>
 
