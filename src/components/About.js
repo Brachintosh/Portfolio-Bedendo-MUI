@@ -175,6 +175,9 @@ const useStyles = makeStyles((theme) =>({
       marginTop: 10,
     },
     cardContainer: {
+      [theme.breakpoints.down('sm', 'xs',)]: {
+        paddingBottom: theme.spacing(10),
+      },
       display: 'flex',
       position: 'relative',
       marginTop: theme.spacing(2.5),
@@ -188,10 +191,12 @@ const useStyles = makeStyles((theme) =>({
     },
     descriptionText: {
       [theme.breakpoints.down('xs',)]: {
-        fontSize: '.75rem',
+        margin: theme.spacing(5),
+        fontSize: '.9rem',
       },
       [theme.breakpoints.down('sm',)]: {
-        fontSize: '.9rem',
+        margin: theme.spacing(6),
+        fontSize: '1rem',
       },
       color: "#795548",
       textShadow: "1px .8px #D7A86E" ,
