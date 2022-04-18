@@ -237,11 +237,13 @@ const useStyles = makeStyles((theme) =>({
       [theme.breakpoints.down('sm')]:{
         width: '100vw',
         height: 'auto',
+        marginLeft: theme.spacing(4),
       },
       [theme.breakpoints.down('xs')]:{
         width: '100vw',
         height: 'auto',
       },
+      marginTop: theme.spacing(3),
     },
     bntResume: {
       [theme.breakpoints.down("sm")]: {
