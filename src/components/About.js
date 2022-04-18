@@ -85,7 +85,6 @@ const codeBinIcon = <img src={codingIcon} alt='img-not-found' style={{display:'f
                 <u style={{display:'flex', flexDirection:'row', justifyContent: 'flex-start', alignItems: 'center', paddingBottom:'2%', }} >
                   {blocks} About Me:
                 </u>
-                  {/* {"  ➪ "}Full stack web developer.<br/>  */}
                   <span style={{display:'flex', flexDirection:'row', justifyContent: 'flex-start', alignItems: 'center', paddingBottom:'2%', }} >
                     {"   "}I consider myself a curious person, who likes to investigate on their own, an eternal self-taught student with an insatiable thirst for knowledge.<br/>
                     {/* <img src={rocketIcon} alt='img-not-found' style={{display:'flex', height:'4rem', width:'4rem',  }}/>{"   "} */}
@@ -97,8 +96,8 @@ const codeBinIcon = <img src={codingIcon} alt='img-not-found' style={{display:'f
                     {/* <img src={appIcon} alt='img-not-found' style={{display:'flex', height:'4rem', width:'4rem',  }}/>{"   "} */}
                     <br/><br/>
                   </span>
-                  
 
+                {/* 
                 <u style={{display:'flex', flexDirection:'row', justifyContent: 'flex-start', alignItems: 'center', paddingBottom:'2%', }} >
                   {codeBinIcon} Tech Skills:
                 </u>
@@ -123,7 +122,9 @@ const codeBinIcon = <img src={codingIcon} alt='img-not-found' style={{display:'f
                   ⋆{" "}Networking: {" "}
                   <img src={gitIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> Git -{" "}{" "}
                   <img src={githubIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> GitHub -{" "}{" "}
-                  <img src={scrumIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> SCRUM{" "}{" "}<br/>
+                  <img src={scrumIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> SCRUM{" "}{" "}<br/> 
+                  */}
+
               </Typography>
               
             </CardContent>

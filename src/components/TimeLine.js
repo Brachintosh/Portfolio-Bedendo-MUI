@@ -1,4 +1,5 @@
 import React from 'react';
+import StarRating from './StarRating';
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from '@material-ui/lab';
 import { makeStyles, Paper, Typography } from '@material-ui/core';
 // ICONS  //
@@ -111,7 +112,7 @@ const TimeLine = () => {
   ];
 
   return (
-    <Timeline position='right' >
+    <Timeline  >
 
       {
         techSkills?.map(({ area, src, title, stars }, index) =>(
@@ -132,7 +133,10 @@ const TimeLine = () => {
 
             <TimelineContent>
               <Paper elevation={3} className={classes.paper} >
-                {title}
+                <Typography variant='subtitle2' component='h1'>
+                  {title}
+                  <StarRating stars={stars} />
+                </Typography>
               </Paper>
             </TimelineContent>
 
@@ -165,7 +169,7 @@ const useStyles = makeStyles((theme) =>({
         maxWidth:"20vw",
       },
         padding:theme.spacing(2.5, 2.5),
-        margin:theme.spacing(4, -1.75),
+        margin:theme.spacing(4, -.25),
         maxWidth:"10vw",
     }
   }
