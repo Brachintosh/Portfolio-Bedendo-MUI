@@ -1,7 +1,6 @@
 import React from 'react'
 import { makeStyles, Typography, Paper, Link } from "@material-ui/core";
 import TimeLine from './TimeLine';
-import blocksTest from '../images/a3.pdf';
 import henryCertificate from '../images/c-h-a4.png';
 
 const Skills = ({ dark, title, id }) => {
