@@ -140,10 +140,10 @@ const TimeLine = () => {
               </Paper>
             </TimelineContent>
 
-
           </TimelineItem>
         ))
       }
+      
     </Timeline>
   )
 };

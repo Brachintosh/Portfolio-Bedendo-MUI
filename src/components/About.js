@@ -5,8 +5,10 @@ import {
   } from "@material-ui/core";
 import author from '../images/brachintosh-Img.jpg';
 import resumeBedendo from '../images/Bedendo Resume.pdf';
-import resumeIcon from '../images/download-resume-1.png';
+import codingIcon from '../images/binary-code1.png';
+import blocksIcon from  '../images/blocks1.png';
 import downloadIcon from '../images/download-icon1.png';
+
 import jsIcon from '../images/icons8-javascript2.svg';
 import reactIcon from '../images/icons8-react.svg';
 import reduxIcon from '../images/icons8-redux.svg';
@@ -23,8 +25,6 @@ import postmanIcon from '../images/postmqnICON2.png';
 import nodeJsIcon from '../images/nodeJS-icon2.png';
 import figmaIcon from '../images/icons8-figma2.svg';
 import appIcon from '../images/apps2.png';
-import codingIcon from '../images/binary-code1.png';
-import blocksIcon from  '../images/blocks1.png';
 import rocketIcon from '../images/rocket2.png';
 import sequelizeIcon from '../images/sequelizeIcon.png';
 import expressIcon from '../images/expresIcon.png';
@@ -154,7 +154,7 @@ const useStyles = makeStyles((theme) =>({
       paddingBottom: '3rem',
     },
     fontTitle:{
-      [theme.breakpoints.down('sm', 'm')]:{
+      [theme.breakpoints.down('sm', 'md')]:{
         fontSize: '2.3rem',
       },
       [theme.breakpoints.down('xs')]:{
@@ -204,7 +204,7 @@ const useStyles = makeStyles((theme) =>({
       fontWeight: 450,
     },
     boxImg: {
-      [theme.breakpoints.down('sm', 'm')]:{
+      [theme.breakpoints.down('sm', 'md')]:{
         display:'none',
         width: '0vw',
         height: '0vh', 
@@ -217,7 +217,7 @@ const useStyles = makeStyles((theme) =>({
       alignSelf: 'center',
     },
     imgAuthor: {
-      [theme.breakpoints.down('sm', 'm')]:{
+      [theme.breakpoints.down('sm', 'md')]:{
         display: 'flex',
         justifyContent: 'start',
         width: '40vw',
