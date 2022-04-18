@@ -15,7 +15,7 @@ console.log(mockData);
 
           <Grid container className={classes.grid} >
             {
-              mockData?.map(({ title, image, link, repo, yt }, index) => (
+              mockData?.map(({ title, image, link, repo, yt, desc }, index) => (
                 <Grid item key={index} xs={12} sm={6} md={4} lg={3} >
                   
                   <Card className={classes.cardContainer} >
@@ -25,6 +25,11 @@ console.log(mockData);
                     <CardContent>
                       <Link href={link} color='primary' target='_blank' rel="noopener noreferrer" />
                         {title}
+
+                        <Typography variant="subtitle2" >
+                          {desc}
+                        </Typography>
+
                     </CardContent>
 
                   </Card>
@@ -69,19 +74,24 @@ const useStyles = makeStyles((theme) =>({
     textShadow: "1.5px .8px #D7A86E",
     letterSpacing: "2px",
     },
+    grid: {
+      marginTop: theme.spacing(4)
+    },
+    cardContainer: {
+      [theme.breakpoints.down('sm')]: {
+        maxWidth: theme.spacing(50),
+        minHeight: theme.spacing(40),
+        margin: theme.spacing(1.5),
+      },
+      maxWidth: theme.spacing(45),
+      minHeight: theme.spacing(40),
+      margin: theme.spacing(3),
+    },
+    cardMedia: {
+      height: 0,
+      paddingTop: '56.25%' // img > 16:9
+    },
   }
 ));
 
 export default MyWork;
-
-
-// ! de onda:
-{/* <Grid>
-  <Paper elevation={3} >
-    hola
-  </Paper>
-  <Paper elevation={3} >
-    chau
-    <img src={dogsPI} alt='dog-pi' />
-  </Paper>
-</Grid> */}
