@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, makeStyles, Card, Paper, Typography, CardMedia, CardContent, Link } from "@material-ui/core";
+import { Grid, makeStyles, Card, Paper, Typography, CardMedia, CardContent, Link, Divider } from "@material-ui/core";
 import mockData from '../mockData';
 
 const MyWork = ({ dark, title, id }) => {
@@ -24,9 +24,11 @@ console.log(mockData);
                     
                     <CardContent>
                       <Link href={link} color='primary' target='_blank' rel="noopener noreferrer" />
-                        {title}
-
-                        <Typography variant="subtitle2" >
+                      <Typography variant="h6" className={classes.titleText} >
+                          {title}
+                        </Typography>
+                        <Divider />
+                        <Typography variant="subtitle2" className={classes.descText} >
                           {desc}
                         </Typography>
 
@@ -49,6 +51,9 @@ console.log(mockData);
 const useStyles = makeStyles((theme) =>({
     // ClassName:
     section:{
+      [theme.breakpoints.down('sm', 'md')]:{
+        paddingBottom: theme.spacing(2),
+      },
       minHeight:"fit",
       paddingBottom: theme.spacing(5),
     },
@@ -57,13 +62,17 @@ const useStyles = makeStyles((theme) =>({
         color: 'rgb(255, 248, 220)',
     },
     sectionContent: {
+      [theme.breakpoints.down('sm', 'md')]:{
+        paddingTop: theme.spacing(1),
+      },
       maxWidth: "85vw",
       margin: "0 auto",
       paddingTop: 9,
     },
     fontTitle:{
-      [theme.breakpoints.down('sm', 'm')]:{
+      [theme.breakpoints.down('sm', 'md')]:{
         fontSize: '2.3rem',
+        marginTop: theme.spacing(1.5),
       },
       [theme.breakpoints.down('xs')]:{
         fontSize: '1.75rem',
@@ -75,21 +84,35 @@ const useStyles = makeStyles((theme) =>({
     letterSpacing: "2px",
     },
     grid: {
+      [theme.breakpoints.down('sm', 'md')]:{
+        marginTop: theme.spacing(1.5),
+      },
       marginTop: theme.spacing(4)
     },
     cardContainer: {
       [theme.breakpoints.down('sm')]: {
         maxWidth: theme.spacing(50),
         minHeight: theme.spacing(40),
+        margin: theme.spacing(1.3),
+      },
+      [theme.breakpoints.down('md')]: {
+        maxWidth: theme.spacing(50),
+        minHeight: theme.spacing(45),
         margin: theme.spacing(1.5),
       },
       maxWidth: theme.spacing(45),
-      minHeight: theme.spacing(40),
-      margin: theme.spacing(3),
+      minHeight: theme.spacing(50),
+      margin: theme.spacing(2),
     },
     cardMedia: {
       height: 0,
       paddingTop: '56.25%' // img > 16:9
+    },
+    titleText: {
+      margin: theme.spacing(.2),
+    },
+    descText: {
+      padding: theme.spacing(1.5, 1.6),
     },
   }
 ));

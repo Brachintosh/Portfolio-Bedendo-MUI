@@ -7,13 +7,6 @@ import dogsPI from './images/dogsPI-screen.png';
 const mockData =
                 [
                     {
-                        title: "Weather SPA",
-                        image: weatherSPA,
-                        link: "https://share-it-tawny.vercel.app/",
-                        repo: "https://github.com/Brachintosh",
-                        desc: "Search the weather from the cities all around the world."
-                    },
-                    {
                         title: "ExcursionApp",
                         image: excursionApp,
                         link: "https://excursionapp.vercel.app/",
@@ -27,6 +20,13 @@ const mockData =
                         link: "https://gamming-life.vercel.app/",
                         repo: "https://github.com/Brachintosh/soyHenry-VideoGames-PI",
                         desc: "Search, filter, store and create your own VideoGames!",
+                    },
+                    {
+                        title: "Weather SPA",
+                        image: weatherSPA,
+                        link: "https://share-it-tawny.vercel.app/",
+                        repo: "https://github.com/Brachintosh",
+                        desc: "Search the weather from the cities all around the world."
                     },
                     {
                         title: "Dog Site",
