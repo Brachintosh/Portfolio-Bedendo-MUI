@@ -112,7 +112,7 @@ const TimeLine = () => {
 
   return (
     <Timeline align='left' >
-      {/* BRACHA ponete las [pilas] ? <br/> OK, maestro ! */}
+
       {
         techSkills?.map(({ area, src, title, stars }, index) =>(
           <TimelineItem key={index} >

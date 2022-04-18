@@ -1,18 +1,20 @@
 import React from 'react'
 import { makeStyles, Typography, Paper, Link } from "@material-ui/core";
 import TimeLine from './TimeLine';
+import codingIcon from '../images/binary-code1.png';
 import henryCertificate from '../images/c-h-a4.png';
 
 const Skills = ({ dark, title, id }) => {
   
   const classes = useStyles();
+  const codeBinIcon = <img src={codingIcon} alt='img-not-found' style={{display:'flex', height:'3rem', width:'3rem', paddingRight:'1rem',   }}/>;
   const certificateLink = "https://certificates.soyhenry.com/cert?id=7fa9d673-0db5-48bd-98fb-0adb834ba72d";
 
   return (
     <div className={`${classes.section} ${dark && classes.sectionDark}`}>
       <div className={classes.sectionContent} id={id} >
         <Typography className={classes.title} variant="h3" >-{" "}{title}:</Typography><br/>
-        
+
         <Paper  className={classes.certificateContainer}>
 
           <Link color="inherit" href={certificateLink} target="_blank" className={classes.certificateLink} >
@@ -20,8 +22,14 @@ const Skills = ({ dark, title, id }) => {
               className={classes.certificateIMG}
             />  
           </Link><br/>
+
+          <Typography variant="h6" className={classes.descriptionText} >
+            <u style={{display:'flex', flexDirection:'row', justifyContent: 'flex-start', alignItems: 'center', paddingBottom:'2%', }} >
+                      {codeBinIcon} Tech Skills:
+            </u>
+          </Typography>
             
-        <TimeLine /><br/>
+          <TimeLine /><br/>
 
         </Paper>
 
