@@ -111,7 +111,7 @@ const TimeLine = () => {
   ];
 
   return (
-    <Timeline align='left' >
+    <Timeline position='right' >
 
       {
         techSkills?.map(({ area, src, title, stars }, index) =>(
@@ -123,9 +123,19 @@ const TimeLine = () => {
               </Typography>
             </TimelineOppositeContent>
 
-            <TimelineSeparator>
-              <img src={src} alt={title} className={classes.customLogo} />
+            <TimelineSeparator >
+              <TimelineDot >
+                <img src={src} alt={title} className={classes.customLogo} />
+              </TimelineDot>
+              <TimelineConnector />
             </TimelineSeparator>
+
+            <TimelineContent>
+              <Paper elevation={3} className={classes.paper} >
+                {title}
+              </Paper>
+            </TimelineContent>
+
 
           </TimelineItem>
         ))
@@ -135,7 +145,8 @@ const TimeLine = () => {
 };
 
 const useStyles = makeStyles((theme) =>({
-    customLogo:{
+
+  customLogo:{
       [theme.breakpoints.down('xs')]: {
         width:"1.5rem",
         height: 'fit'
@@ -145,12 +156,17 @@ const useStyles = makeStyles((theme) =>({
         height: 'fit'
       },
         width:"3.3rem",
-        height: 'fit'
+        height: 'fit',
 
     },
     paper:{
-        padding:theme.spacing(2, 6),
-        maxWidth:"70vw",
+      [theme.breakpoints.down('sm')]: {
+        margin:theme.spacing(2, -.5),
+        maxWidth:"20vw",
+      },
+        padding:theme.spacing(2.5, 2.5),
+        margin:theme.spacing(4, -1.75),
+        maxWidth:"10vw",
     }
   }
 ));
