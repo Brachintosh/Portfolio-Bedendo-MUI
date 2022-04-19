@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
-import { makeStyles, Divider, Paper, Radio, TextField, Typography, Button } from "@material-ui/core";
+import { Box, Link, makeStyles, Divider, Paper, Radio, TextField, Typography, Button } from "@material-ui/core";
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
+import Instagram from '@material-ui/icons/Instagram';
 
 const ContactMe = ({ title, dark, id }) => {
 
@@ -17,6 +21,29 @@ const ContactMe = ({ title, dark, id }) => {
 
           <Paper className={classes.paperContact}>
             
+            <Box className={classes.contactLinks} border='invisible' >
+              <div className={classes.contactLinks} >
+                <Link href='https://github.com/Brachintosh' target="_blank" rel="noopener noreferrer" >
+                  <GitHubIcon className={classes.linked} />
+                </Link>
+              </div>
+              <div className={classes.contactLinks} >
+                <Link href='https://www.linkedin.com/in/brian-ezequiel-bedendo' target="_blank" rel="noopener noreferrer" >
+                  <LinkedInIcon className={classes.linked}/>
+                </Link>
+              </div>
+              <div className={classes.contactLinks} >
+                <Link href='https://wa.me/541158261458' target="_blank" rel="noopener noreferrer" >
+                  <WhatsAppIcon className={classes.linked}/>
+                </Link>
+              </div>
+              <div className={classes.contactLinks} >
+                <Link href='https://www.instagram.com/brachintosh/' target="_blank" rel="noopener noreferrer" >
+                  <Instagram className={classes.linked}/>
+                </Link>
+              </div>
+            </Box>
+
             <div className={classes.titleCheckbox}>
               <Typography variant='h4' > Contact Me </Typography> <Divider />
               <div className={classes.choices} >
@@ -55,7 +82,11 @@ const ContactMe = ({ title, dark, id }) => {
               <TextField label="Write a message..." className={classes.textFields} />
             </form>
 
-            <Button variant='contained' className={classes.btnSubmit} >Submit</Button>
+            <Button 
+              variant='contained'
+              className={classes.btnSubmit} 
+              href="mailto:bedendo.br@gmail.com"
+              >Submit</Button>
 
           </Paper>
 
@@ -134,7 +165,7 @@ const useStyles = makeStyles((theme) =>({
         margin: theme.spacing(2, 3.5),
       },
       width: "70vw",
-      margin: theme.spacing(2.5, 10),
+      margin: theme.spacing(.2, 10),
       "& h4":{
         marginBottom: theme.spacing(2),
        },
@@ -203,6 +234,17 @@ const useStyles = makeStyles((theme) =>({
         fontWeight: 700,
         letterSpacing: "1.5px",
       },
+    },
+    contactLinks: {
+      display: 'flex',
+      flexDirection: 'row',
+      justifyItems: 'space-around',
+      alignItems: 'space-around',
+      margin: theme.spacing(1.5),
+    },
+    linked: {
+      minWidth: '2.5rem',
+      minHeight: '2.5rem',
     },
 
   }));
