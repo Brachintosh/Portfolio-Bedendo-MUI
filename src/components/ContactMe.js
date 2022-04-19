@@ -26,14 +26,14 @@ const ContactMe = ({ title, dark, id }) => {
     emailJS.sendForm('service_mft0sgh', 'template_c8fgc9u', e.target, 'ZgFceUGRCxVnpxkqu')
       .then((result) => {
         console.log('Result >>> ', result.text);
-        swal(
+        swal.fire(
           'Good job!',
-          'You have sended to brachintosh an e-mail!',
+          'You have sent to an email brachintosh!',
           'success'
         )
       }, (error) => {
         console.log('Error >>> ', error.text);
-        swal(
+        swal.fire(
           'Upsss!',
           'Message failed!',
           'error'
