@@ -5,6 +5,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import Instagram from '@material-ui/icons/Instagram';
 import emailJS from 'emailjs-com';
+import swal from 'sweetalert2';
 
 const ContactMe = ({ title, dark, id }) => {
 
@@ -25,8 +26,18 @@ const ContactMe = ({ title, dark, id }) => {
     emailJS.sendForm('service_mft0sgh', 'template_c8fgc9u', e.target, 'ZgFceUGRCxVnpxkqu')
       .then((result) => {
         console.log('Result >>> ', result.text);
+        swal(
+          'Good job!',
+          'You have sended to brachintosh an e-mail!',
+          'success'
+        )
       }, (error) => {
         console.log('Error >>> ', error.text);
+        swal(
+          'Upsss!',
+          'Message failed!',
+          'error'
+        )
       });
     
     e.target.reset();
@@ -84,9 +95,9 @@ const ContactMe = ({ title, dark, id }) => {
               </div>
             </div>
 
-            <form className={classes.form} noValidate autoComplete='off' onSubmit={sendEmail} >
-              <TextField label="Your name..." className={classes.textFields} name='name' onChange={cLog} />
-              <TextField label="Your e-mail..." className={classes.textFields} name='email' onChange={cLog}/>
+            <form className={classes.form} autoComplete='off' onSubmit={sendEmail} >
+              <TextField label="Your name..." required className={classes.textFields} name='name' onChange={cLog} />
+              <TextField label="Your e-mail..." required className={classes.textFields} name='email' onChange={cLog}/>
               
               {
                 value === "Get a Quote" ? (
@@ -97,7 +108,7 @@ const ContactMe = ({ title, dark, id }) => {
                 ) : null
               }
 
-              <TextField label="Write a message..." className={classes.textFields}  name='message' onChange={cLog} />
+              <TextField multiline variant='outlined'fullWidth required label="Write a message..." className={classes.textFields}  name='message' onChange={cLog} />
 
             <Button 
               variant='contained'

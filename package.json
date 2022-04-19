@@ -17,6 +17,7 @@
     "react-scripts": "5.0.0",
     "react-scroll": "^1.8.4",
     "react-typewriter-effect": "^1.1.0",
+    "sweetalert2": "^11.4.8",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
