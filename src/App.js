@@ -1,4 +1,4 @@
-import { makeStyles } from "@material-ui/core";
+import { createTheme, } from '@material-ui/core/styles';
 import NavBar from "./components/NavBar";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -6,15 +6,24 @@ import MyWork from "./components/MyWork";
 import ContactMe from "./components/ContactMe";
 import ScrollToTop from "./components/ScrollToTop";
 import FooterBrand from "./components/FooterBrand";
+import { makeStyles, MuiThemeProvider } from "@material-ui/core";
+import { brown, amber } from "@material-ui/core/colors";
+
+const theme = createTheme({
+  palette:{
+    primary:{main:"#b26500"},
+    secondary:{main:"#343434"},
+    third: {main: "#D7A86E"},
+   }
+})
 
 function App() {
   
 const classes = useStyles();
 
   return (
-
-    <div className={classes.root}>
-      
+  <MuiThemeProvider theme={theme}>
+    <div className={classes.root}>   
       <NavBar />
       <ScrollToTop hidden showBelow={150}/>
       <About id="about" title="About Me" dark={true} />
@@ -23,7 +32,7 @@ const classes = useStyles();
       <ContactMe id="contact" title="Get in Touch" dark={false} />
       <FooterBrand />
     </div>
-
+  </MuiThemeProvider>
   );
 };
 
@@ -31,7 +40,7 @@ const classes = useStyles();
 const useStyles = makeStyles((theme) =>({
   // ClassName:
   root:{
-    color: "#616161"
+    color: "#b26500"
   }
 }))
 
