@@ -4,14 +4,32 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import Instagram from '@material-ui/icons/Instagram';
+import emailJS from 'emailjs-com';
 
 const ContactMe = ({ title, dark, id }) => {
 
   const classes = useStyles();
   const [value, setValue] = useState("Say Hi");
 
+  const cLog = (e) => {
+    console.log('Soy input >>> ', e.target.value);
+  };
+
   const handleChange = (e) => {
     setValue(e.target.value);
+  };
+
+  function sendEmail(e) { 
+    e.preventDefault();
+
+    emailJS.sendForm('service_mft0sgh', 'template_c8fgc9u', e.target, 'ZgFceUGRCxVnpxkqu')
+      .then((result) => {
+        console.log('Result >>> ', result.text);
+      }, (error) => {
+        console.log('Error >>> ', error.text);
+      });
+    
+    e.target.reset();
   };
 
   return (
@@ -66,27 +84,27 @@ const ContactMe = ({ title, dark, id }) => {
               </div>
             </div>
 
-            <form className={classes.form} noValidate autoComplete='off' >
-              <TextField label="Your name..." className={classes.textFields} />
-              <TextField label="Your e-mail..." className={classes.textFields} />
+            <form className={classes.form} noValidate autoComplete='off' onSubmit={sendEmail} >
+              <TextField label="Your name..." className={classes.textFields} name='name' onChange={cLog} />
+              <TextField label="Your e-mail..." className={classes.textFields} name='email' onChange={cLog}/>
               
               {
                 value === "Get a Quote" ? (
                   <>
-                    <TextField label="Needed services" className={classes.textFields} />
-                    <TextField label="Estimated budget" className={classes.textFields} />
+                    <TextField label="Needed services" className={classes.textFields} name='services' onChange={cLog} />
+                    <TextField label="Estimated budget" className={classes.textFields} name='budget' onChange={cLog} />
                   </>
                 ) : null
               }
 
-              <TextField label="Write a message..." className={classes.textFields} />
-            </form>
+              <TextField label="Write a message..." className={classes.textFields}  name='message' onChange={cLog} />
 
             <Button 
               variant='contained'
               className={classes.btnSubmit} 
-              href="mailto:bedendo.br@gmail.com"
+              type='submit'
               >Submit</Button>
+            </form>
 
           </Paper>
 
