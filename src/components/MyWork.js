@@ -110,6 +110,7 @@ const useStyles = makeStyles((theme) =>({
     },
     titleText: {
       margin: theme.spacing(.2),
+      color: theme.palette.third.main,
     },
     descText: {
       padding: theme.spacing(1.5, 1.6),

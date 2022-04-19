@@ -121,16 +121,23 @@ const useStyles = makeStyles((theme) =>({
       // justifyContent: 'center',
       alignItems: 'center',
       maxWidth: "85vw",
-      minHeight: theme.spacing(60),
-      margin: theme.spacing(1.5),
+      minHeight: theme.spacing(65),
+      marginTop: theme.spacing(1.5),
     },
     titleCheckbox: {
       [theme.breakpoints.down("sm")]: {
         width: "75vw",
-        margin: theme.spacing(1.3),
+        margin: theme.spacing(1.3, 5),
+      },
+      [theme.breakpoints.down("md")]: {
+        width: "75vw",
+        margin: theme.spacing(2, 3.5),
       },
       width: "70vw",
-      margin: theme.spacing(3),
+      margin: theme.spacing(2.5, 10),
+      "& h4":{
+        marginBottom: theme.spacing(2),
+       },
     },
     choices: {
       [theme.breakpoints.down("sm")]: {
