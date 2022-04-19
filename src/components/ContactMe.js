@@ -96,15 +96,17 @@ const useStyles = makeStyles((theme) =>({
     },
     sectionContent: {
       [theme.breakpoints.down("xs")]: {
-        paddingTop: theme.spacing(1.5),
+        paddingTop: theme.spacing(1),
+      },
+      [theme.breakpoints.down("md")]: {
+        paddingTop: theme.spacing(1),
       },
       display: 'flex',
       flexDirection: 'column',
-      // justifyContent: 'center',
+      justifyContent: 'center',
       maxWidth: "85vw",
       margin: "0 auto",
-      paddingTop: theme.spacing(3),
-      border: 'solid #D7A86E 2px'
+      paddingTop: theme.spacing(1.3),
     },
     paperContact: {
       [theme.breakpoints.down("sm")]: {
@@ -147,17 +149,53 @@ const useStyles = makeStyles((theme) =>({
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
-
     },
     textFields: {
       [theme.breakpoints.down("sm")]: {
-        marginBottom: theme.spacing(2),
+        marginBottom: theme.spacing(3),
+        minWidth: "60vw",
       },
-      marginBottom: theme.spacing(4),
+      [theme.breakpoints.down("md")]: {
+        marginBottom: theme.spacing(3),
+        minWidth: "50vw",
+      },
+      marginBottom: theme.spacing(4.5),
+      minWidth: "45vw",
     },
     btnSubmit: {
       marginBottom: theme.spacing(4),
       padding: theme.spacing(1.2, 4),
+      fontWeight: 600,
+      color: 'rgb(255, 248, 220)',
+      textShadow: "1.5px .8px #795548",
+      letterSpacing: "2px",
+      backgroundColor: '#D7A86E',
+      border: ' solid .8px rgb(255, 248, 220)',
+      borderRadius: '12px',
+      transition: 'all .45s',
+      boxShadow: "2px 3px 4px 1px #795548",
+      "& a": {
+        textDecoration: 'none',
+        color: 'rgb(255, 248, 220)',
+        fontWeight: 700,
+        textShadow: "1.5px .8px #795548",
+        letterSpacing: "1.5px",
+      },
+      "&:hover":{
+        color: '#795548',
+        textShadow: "1.5px .8px #D7A86E",
+        backgroundColor: 'rgb(255, 248, 220)',
+        border: 'solid #D7A86E 2px',
+        boxShadow: "2px 3px 4px 1px #795548",
+      },
+      "& a:hover": {
+        transition: 'all .45s',
+        textDecoration: 'none',
+        textShadow: "1.5px .8px #D7A86E",
+        color: "#795548",
+        fontWeight: 700,
+        letterSpacing: "1.5px",
+      },
     },
 
   }));
