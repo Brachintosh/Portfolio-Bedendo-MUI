@@ -39,12 +39,16 @@ const linksNav = [
   },
 ]
 
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
   <>
     <AppBar position="sticky" className={classes.root} >
         <Toolbar className={classes.toolbar} >
           <Typography variant="h6" component="div" className={classes.nameStyle}>
-            <img src={logo} className={classes.logo} alt="No-connection" />
+            <img src={logo} className={classes.logo} alt="No-connection"  onClick={scrollToTop}/>
             Brian E. Bedendo
           </Typography>
 
