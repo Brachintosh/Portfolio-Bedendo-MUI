@@ -67,7 +67,7 @@ const useStyles = makeStyles((theme) =>({
       },
       maxWidth: "85vw",
       margin: "0 auto",
-      paddingTop: 9,
+      paddingTop: theme.spacing(4),
     },
     fontTitle:{
       [theme.breakpoints.down('sm', 'md')]:{
@@ -114,7 +114,9 @@ const useStyles = makeStyles((theme) =>({
     descText: {
       padding: theme.spacing(1.5, 1.6),
     },
+
   }
+  
 ));
 
 export default MyWork;
