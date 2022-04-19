@@ -23,10 +23,11 @@ console.log(mockData);
                     <CardMedia image={image} title={title} className={classes.cardMedia} />
                     
                     <CardContent>
-                      <Link href={link} color='primary' target='_blank' rel="noopener noreferrer" />
-                      <Typography variant="h6" className={classes.titleText} >
+                      <Link href={link} color='primary' target='_blank' rel="noopener noreferrer" >
+                        <Typography variant="h6" className={classes.titleText} >
                           {title}
                         </Typography>
+                      </Link>
                         <Divider />
                         <Typography variant="subtitle2" className={classes.descText} >
                           {desc}
