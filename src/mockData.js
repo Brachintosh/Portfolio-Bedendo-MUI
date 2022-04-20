@@ -1,4 +1,4 @@
-import weatherSPA from './images/weather-app-4.png';
+import weatherSPA from './images/weatherAppScreenShot.png';
 import excursionApp from './images/excAppScreen.png';
 import videogames from  './images/vgPI-Screen.png';
 import dogsPI from './images/dogsPI-screen.png';
