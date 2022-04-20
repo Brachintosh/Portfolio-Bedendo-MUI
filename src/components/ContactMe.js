@@ -6,8 +6,10 @@ import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import Instagram from '@material-ui/icons/Instagram';
 import emailJS from 'emailjs-com';
 import swal from 'sweetalert2';
+import mailIconPng from '../images/mail-post-60.png';
 
 const ContactMe = ({ title, dark, id }) => {
+  const mailIcon = <img src={mailIconPng} alt='img-not-found' style={{display:'flex', height:'3rem', width:'3rem', paddingRight:'1rem',   }}/>;
 
   const classes = useStyles();
   const [value, setValue] = useState("Say Hi");
@@ -25,21 +27,18 @@ const ContactMe = ({ title, dark, id }) => {
 
     emailJS.sendForm('service_mft0sgh', 'template_c8fgc9u', e.target, 'ZgFceUGRCxVnpxkqu')
       .then((result) => {
-        console.log('Result >>> ', result.text);
         swal.fire(
           'Good job!',
           'You have sent to an email brachintosh!',
           'success'
         )
       }, (error) => {
-        console.log('Error >>> ', error.text);
         swal.fire(
           'Upsss!',
           'Message failed!',
           'error'
         )
       });
-    
     e.target.reset();
   };
 
@@ -74,7 +73,13 @@ const ContactMe = ({ title, dark, id }) => {
             </Box>
 
             <div className={classes.titleCheckbox}>
-              <Typography variant='h4' > Contact Me </Typography> <Divider />
+
+              <Typography variant="h6" >
+                <u style={{display:'flex', flexDirection:'row', justifyContent: 'flex-start', alignItems: 'center', paddingBottom:'2%', }} >
+                          {mailIcon} Contact Me:
+                </u>
+              </Typography> <Divider />
+              
               <div className={classes.choices} >
                 <span>Say Hello!</span>
                 <Radio 
