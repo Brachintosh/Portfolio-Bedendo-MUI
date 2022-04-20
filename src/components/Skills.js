@@ -1,5 +1,5 @@
 import React from 'react'
-import { makeStyles, Typography, Paper, Link } from "@material-ui/core";
+import { makeStyles, Typography, Paper, Link, Divider } from "@material-ui/core";
 import TimeLine from './TimeLine';
 import codingIcon from '../images/binary-code1.png';
 import henryCertificate from '../images/c-h-a4.png';
@@ -27,7 +27,7 @@ const Skills = ({ dark, title, id }) => {
             <u style={{display:'flex', flexDirection:'row', justifyContent: 'flex-start', alignItems: 'center', paddingBottom:'2%', }} >
                       {codeBinIcon} Tech Skills:
             </u>
-          </Typography>
+          </Typography> <Divider />
             
           <TimeLine /><br/>
 
