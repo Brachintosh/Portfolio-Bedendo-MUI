@@ -24,9 +24,9 @@ const mockData =
                     {
                         title: "Weather SPA",
                         image: weatherSPA,
-                        link: "https://share-it-tawny.vercel.app/",
-                        repo: "https://github.com/Brachintosh",
-                        desc: "Search the weather from the cities all around the world."
+                        link: "https://weather-app-react-brachintosh.vercel.app/",
+                        repo: "https://github.com/Brachintosh/Weather-App-React",
+                        desc: "Search the current weather from the cities all around the world."
                     },
                     {
                         title: "Dog Site",
