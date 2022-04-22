@@ -40,7 +40,7 @@ const mockData =
                         image: drumKit,
                         link: "https://brachintosh-drum-kit.vercel.app/",
                         repo: "https://github.com/Brachintosh/Vanilla-JS/tree/main/01_Drum_Kit",
-                        desc: "Let's do some Music be playing Drums !"
+                        desc: "Let's do some Music by playing Drums! Enjoy!!"
                     },
                 ]
 
