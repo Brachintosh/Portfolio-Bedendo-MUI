@@ -2,7 +2,7 @@ import weatherSPA from './images/weatherAppScreenShot.png';
 import excursionApp from './images/excAppScreen.png';
 import videogames from  './images/vgPI-Screen.png';
 import dogsPI from './images/dogsPI-screen.png';
-
+import drumKit from './images/drumKit-JS.png';
 
 const mockData =
                 [
@@ -34,6 +34,13 @@ const mockData =
                         link: "https://dogs-spa-brachintosh.vercel.app/",
                         repo: "https://github.com/Brachintosh/PI-Dogs-soyHenry",
                         desc: "Search, filter, store and create your own Breeds!"
+                    },
+                    {
+                        title: "Drum Kit.js",
+                        image: drumKit,
+                        link: "https://brachintosh-drum-kit.vercel.app/",
+                        repo: "https://github.com/Brachintosh/Vanilla-JS/tree/main/01_Drum_Kit",
+                        desc: "Let's do some Music be playing Drums !"
                     },
                 ]
 
