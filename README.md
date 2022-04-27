@@ -1,2 +1,2 @@
-# Personal Portfolio Developed with Create-Ract App
+# Personal Portfolio Developed with Create-React App
 
