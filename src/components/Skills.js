@@ -70,6 +70,7 @@ const useStyles = makeStyles((theme) =>({
       margin: "0 auto",
       paddingTop: theme.spacing(3),
     },
+    
     certificateContainer: {
       [theme.breakpoints.down('sm')]:{
         padding: theme.spacing(2),
@@ -89,11 +90,11 @@ const useStyles = makeStyles((theme) =>({
       [theme.breakpoints.down('xs')]:{
         margin: theme.spacing(0.75),
       },
-
       width: '75vw',
       height: 'auto',
       border:'solid black .7px',
     },
+    
   }));
 
 
