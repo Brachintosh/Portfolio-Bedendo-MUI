@@ -3,6 +3,7 @@ import excursionApp from './images/excAppScreen.png';
 import videogames from  './images/vgPI-Screen.png';
 import dogsPI from './images/dogsPI-screen.png';
 import drumKit from './images/drumKit-JS.png';
+import giffyApp from './images/GiffyAppScreen.png';
 
 const mockData =
                 [
@@ -13,6 +14,13 @@ const mockData =
                         repo: "https://github.com/Brachintosh/PG-Henry",
                         yt: "https://www.youtube.com/watch?v=3-HB5SKCRtg",
                         desc: "Search, filter, store, create and buy your own Excursion!"
+                    },
+                    {
+                        title: "GiffyApp",
+                        image: giffyApp,
+                        link: "https://brachintosh-giffy-app.vercel.app/",
+                        repo: "https://github.com/Brachintosh/giffyApp",
+                        desc: "Search for amazing Giff's and have fun with your friends!"
                     },
                     {
                         title: "Gamming.Life",
