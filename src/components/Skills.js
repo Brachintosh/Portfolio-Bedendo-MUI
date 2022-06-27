@@ -3,7 +3,7 @@ import { makeStyles, Typography, Paper, Link, Divider } from "@material-ui/core"
 import TimeLine from './TimeLine';
 import codingIcon from '../images/binary-code1.png';
 import henryCertificate from '../images/c-h-a4.png';
-import noCountry form '../images/NoCountry-BRIAN BEDENDO.jpeg';
+import noCountry from '../images/NoCountry.jpeg';
 
 const Skills = ({ dark, title, id }) => {
   
