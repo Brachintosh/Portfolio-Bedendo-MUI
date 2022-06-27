@@ -14,7 +14,7 @@ const mockData =
                         link: "https://desafio-bedendo.vercel.app/",
                         repo: "https://github.com/Brachintosh/desafio-react",
                         yt: "https://www.youtube.com/watch?v=3-HB5SKCRtg",
-                        desc: "React Challenge. Search and filter Movies from TheMoiveDB-API"
+                        desc: "React Challenge. Search and filter Movies from TheMovieDB-API"
                     },
                     {
                         title: "ExcursionApp",
