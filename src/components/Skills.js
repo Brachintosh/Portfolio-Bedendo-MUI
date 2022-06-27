@@ -10,6 +10,7 @@ const Skills = ({ dark, title, id }) => {
   const classes = useStyles();
   const codeBinIcon = <img src={codingIcon} alt='img-not-found' style={{display:'flex', height:'3rem', width:'3rem', paddingRight:'1rem',   }}/>;
   const certificateLink = "https://certificates.soyhenry.com/cert?id=7fa9d673-0db5-48bd-98fb-0adb834ba72d";
+  const noCountryLink = "https://ibb.co/9ttgjyQ";
 
   return (
     <div className={`${classes.section} ${dark && classes.sectionDark}`}>
@@ -24,7 +25,7 @@ const Skills = ({ dark, title, id }) => {
             />  
           </Link><br/>
           
-          <Link color="inherit" href={certificateLink} target="_blank" className={classes.certificateLink} >
+          <Link color="inherit" href={noCountryLink} target="_blank" className={classes.certificateLink} >
             <img src={noCountry} alt='NoCounrty-certificate.pdf' title='No Counrty Certificate Bedendo'
               className={classes.certificateIMG}
             />  
