@@ -4,9 +4,18 @@ import videogames from  './images/vgPI-Screen.png';
 import dogsPI from './images/dogsPI-screen.png';
 import drumKit from './images/drumKit-JS.png';
 import giffyApp from './images/GiffyAppScreen.png';
+const veo_veo = "https://media.giphy.com/media/lmLh2QYTI6mRF3fFNb/giphy.gif"
 
 const mockData =
                 [
+                    {
+                        title: "Veo-Veo",
+                        image: veo_veo,
+                        link: "https://desafio-bedendo.vercel.app/",
+                        repo: "https://github.com/Brachintosh/desafio-react",
+                        yt: "https://www.youtube.com/watch?v=3-HB5SKCRtg",
+                        desc: "React Challenge. Search and filter Movies from TheMoiveDB-API"
+                    },
                     {
                         title: "ExcursionApp",
                         image: excursionApp,
