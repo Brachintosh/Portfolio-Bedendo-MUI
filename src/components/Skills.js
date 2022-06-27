@@ -3,6 +3,7 @@ import { makeStyles, Typography, Paper, Link, Divider } from "@material-ui/core"
 import TimeLine from './TimeLine';
 import codingIcon from '../images/binary-code1.png';
 import henryCertificate from '../images/c-h-a4.png';
+import noCountry form '../images/NoCountry-BRIAN BEDENDO.jpeg';
 
 const Skills = ({ dark, title, id }) => {
   
@@ -19,6 +20,12 @@ const Skills = ({ dark, title, id }) => {
 
           <Link color="inherit" href={certificateLink} target="_blank" className={classes.certificateLink} >
             <img src={henryCertificate} alt='certificate.pdf' title='Certificate Bedendo'
+              className={classes.certificateIMG}
+            />  
+          </Link><br/>
+          
+          <Link color="inherit" href={certificateLink} target="_blank" className={classes.certificateLink} >
+            <img src={noCountry} alt='NoCounrty-certificate.pdf' title='No Counrty Certificate Bedendo'
               className={classes.certificateIMG}
             />  
           </Link><br/>
