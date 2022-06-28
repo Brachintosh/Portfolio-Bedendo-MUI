@@ -1,12 +1,15 @@
 import React from 'react'
-import { Grid, makeStyles, Card, Paper, Typography, CardMedia, CardContent, Link, Divider } from "@material-ui/core";
+import { Grid, makeStyles, Card, Typography, CardMedia, CardContent, Link, Divider } from "@material-ui/core";
+import GitHubIcon from '@material-ui/icons/GitHub';
+import CodeIcon from '@material-ui/icons/Code';
+import YouTubeIcon from '@material-ui/icons/YouTube';
 import mockData from '../mockData';
 
 const MyWork = ({ dark, title, id }) => {
 
 const classes = useStyles();
 
-console.log(mockData);
+console.log(mockData.map(y => y.yt));
 
   return (
     <div className={`${classes.section} ${dark && classes.sectionDark}`}>
@@ -28,10 +31,32 @@ console.log(mockData);
                           {title}
                         </Typography>
                       </Link>
-                        <Divider />
-                        <Typography variant="subtitle2" className={classes.descText} >
-                          {desc}
-                        </Typography>
+                      
+                      <Divider />
+
+                      <Typography variant="subtitle2" className={classes.descText} >
+                        {desc}
+                      </Typography>
+
+                      {/* ICONO GITHUB */}
+                      <Link href={repo} color='primary' target='_blank' rel="noopener noreferrer" >
+                        <GitHubIcon className={classes.iconImg} />
+                      </Link>
+
+                      {/* ICONO DEPLOY */}
+                      <Link href={link} color='primary' target='_blank' rel="noopener noreferrer" >
+                        <CodeIcon className={classes.iconImg} />
+                      </Link>
+
+                      {/* ICONO YouTube */}
+                      {yt ? 
+                      <Link href={yt} color='primary' target='_blank' rel="noopener noreferrer" >
+                        <YouTubeIcon className={classes.iconImg} />
+                      </Link>
+                      :
+                      null
+                      }
+                      
 
                     </CardContent>
 
@@ -116,6 +141,11 @@ const useStyles = makeStyles((theme) =>({
     descText: {
       padding: theme.spacing(1.5, 1.6),
     },
+    iconImg: {
+      minWidth: '1.85rem',
+      minHeight: '1.85rem',
+      margin: theme.spacing(.5, 2),
+    }
 
   }
   

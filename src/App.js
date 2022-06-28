@@ -7,7 +7,6 @@ import ContactMe from "./components/ContactMe";
 import ScrollToTop from "./components/ScrollToTop";
 import FooterBrand from "./components/FooterBrand";
 import { makeStyles, MuiThemeProvider } from "@material-ui/core";
-import { brown, amber } from "@material-ui/core/colors";
 
 const theme = createTheme({
   palette:{

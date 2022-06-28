@@ -117,7 +117,6 @@ const useStyles = makeStyles((theme) =>({
         textShadow: "1px .6px #FCFF53",
         letterSpacing: ".9px",
         transition: 'all ease-in-out .7s',
-        textShadow: ".6px .5px #FCFF53",
         "&:hover, &.Mui-focusVisible": {
             transition: 'all ease 0.6s',
             color: "#FF5353",

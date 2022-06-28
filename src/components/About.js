@@ -1,39 +1,39 @@
 import React from 'react';
 import TypeWriterEffect from 'react-typewriter-effect';
 import {
-   makeStyles, Typography, Card, CardActions, CardContent, Box, Button, Divider
+   makeStyles, Typography, Card, CardActions, CardContent, Box, Button
   } from "@material-ui/core";
 import author from '../images/brachintosh-Img.jpg';
 import resumeBedendo from '../images/Bedendo Resume.pdf';
-import codingIcon from '../images/binary-code1.png';
 import blocksIcon from  '../images/blocks1.png';
 import downloadIcon from '../images/download-icon1.png';
 
-import jsIcon from '../images/icons8-javascript2.svg';
-import reactIcon from '../images/icons8-react.svg';
-import reduxIcon from '../images/icons8-redux.svg';
-import htmlIcon from '../images/icons8-html-5.svg';
-import cssIcon from '../images/icons8-css3.svg';
-import tailwindIcon from '../images/Tailwind_CSS_Logo.svg.png';
-import mUI_Icon from '../images/material-ui-logo1.png';
-import gitIcon from '../images/icons8-git.svg';
-import githubIcon from '../images/icons8-github-144.png';
-import scrumIcon from '../images/scrum2icon.png';
-import scrumAgile_Icon from '../images/icons8-scrum-64.png';
-import postgreIcon from '../images/icons8-postgresql.svg';
-import postmanIcon from '../images/postmqnICON2.png';
-import nodeJsIcon from '../images/nodeJS-icon2.png';
-import figmaIcon from '../images/icons8-figma2.svg';
-import appIcon from '../images/apps2.png';
-import rocketIcon from '../images/rocket2.png';
-import sequelizeIcon from '../images/sequelizeIcon.png';
-import expressIcon from '../images/expresIcon.png';
+// import codingIcon from '../images/binary-code1.png';
+// import jsIcon from '../images/icons8-javascript2.svg';
+// import reactIcon from '../images/icons8-react.svg';
+// import reduxIcon from '../images/icons8-redux.svg';
+// import htmlIcon from '../images/icons8-html-5.svg';
+// import cssIcon from '../images/icons8-css3.svg';
+// import tailwindIcon from '../images/Tailwind_CSS_Logo.svg.png';
+// import mUI_Icon from '../images/material-ui-logo1.png';
+// import gitIcon from '../images/icons8-git.svg';
+// import githubIcon from '../images/icons8-github-144.png';
+// import scrumIcon from '../images/scrum2icon.png';
+// import scrumAgile_Icon from '../images/icons8-scrum-64.png';
+// import postgreIcon from '../images/icons8-postgresql.svg';
+// import postmanIcon from '../images/postmqnICON2.png';
+// import nodeJsIcon from '../images/nodeJS-icon2.png';
+// import figmaIcon from '../images/icons8-figma2.svg';
+// import appIcon from '../images/apps2.png';
+// import rocketIcon from '../images/rocket2.png';
+// import sequelizeIcon from '../images/sequelizeIcon.png';
+// import expressIcon from '../images/expresIcon.png';
 
 const About = ({ title, dark, id }) => {
 
 const classes = useStyles();
 const blocks = <img src={blocksIcon} alt='img-not-found' style={{display:'flex', height:'3rem', width:'3rem', paddingRight:'1rem',   }}/>
-const codeBinIcon = <img src={codingIcon} alt='img-not-found' style={{display:'flex', height:'3rem', width:'3rem', paddingRight:'1rem',   }}/>;
+// const codeBinIcon = <img src={codingIcon} alt='img-not-found' style={{display:'flex', height:'3rem', width:'3rem', paddingRight:'1rem',   }}/>;
 
   return (
     <div className={`${classes.section} ${dark && classes.sectionDark}`}>
@@ -42,7 +42,7 @@ const codeBinIcon = <img src={codingIcon} alt='img-not-found' style={{display:'f
       
           <Card className={classes.cardContainer} >
             <Box className={classes.boxImg} >
-              <img src={author} title="picture-brachintosh" className={classes.imgAuthor} />
+              <img src={author} title="brachintosh" className={classes.imgAuthor} alt='author-brachintosh' />
             </Box>
 
             <CardContent className={classes.cardContent} >
@@ -285,67 +285,3 @@ const useStyles = makeStyles((theme) =>({
   }));
 
 export default About;
-
-
-// OLD TYPE WRTIER QUOTES !
-  {/* 
-  <TypeWriterEffect 
-    text=" 💻  -  Full Stack Developer. "
-    textStyle={{
-      fontSize:'1.2rem',
-      fontWeight: 450,
-      color: '#795548',
-    }}
-    cursorColor='#EEEEEE'
-    startDelay={4000}
-    typeSpeed={100}
-  /><br/>
-
-  <TypeWriterEffect 
-    text=" ✍️  -  Enthusiastic Dev.   "
-    textStyle={{
-      fontSize:'1.2rem',
-      fontWeight: 450,
-      color: '#795548',
-    }}
-    cursorColor='#EEEEEE'
-    startDelay={7500}
-    typeSpeed={100}
-  /><br/>
-  
-  <TypeWriterEffect 
-    text=" ⚛️  -  React/React Native Dev."
-    textStyle={{
-      fontSize:'1.2rem',
-      fontWeight: 450,
-      color: '#795548',
-    }}
-    cursorColor='#EEEEEE'
-    startDelay={11500}
-    typeSpeed={100}
-  /><br/>
-  
-  
-  <TypeWriterEffect 
-    text=" 📚  - SCRUM Methodologies."
-    textStyle={{
-      fontSize:'1.2rem',
-      fontWeight: 450,
-      color: '#795548',
-    }}
-    cursorColor='#EEEEEE'
-    startDelay={15000}
-    typeSpeed={100}
-  /><br/>
-  
-  <TypeWriterEffect 
-    text=" ✅ - Knack of building applications with Front-end and Back-end operations."
-    textStyle={{
-      fontSize:'1.2rem',
-      fontWeight: 450,
-      color: '#795548',
-    }}
-    cursorColor='#EEEEEE'
-    startDelay={18500}
-    typeSpeed={100}
-  /><br/> */}
