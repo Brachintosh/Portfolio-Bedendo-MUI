@@ -172,6 +172,7 @@ const useStyles = makeStyles((theme) =>({
       maxWidth: "85vw",
       margin: "0 auto",
       paddingTop: theme.spacing(1.3),
+
     },
     paperContact: {
       [theme.breakpoints.down("sm")]: {
@@ -187,7 +188,9 @@ const useStyles = makeStyles((theme) =>({
       alignItems: 'center',
       maxWidth: "85vw",
       minHeight: theme.spacing(65),
-      marginTop: theme.spacing(1.5),
+      marginTop: theme.spacing(3),
+      marginBottom: theme.spacing(2),
+      boxShadow: "2px 2px 15px 2px #343434",
     },
     titleCheckbox: {
       [theme.breakpoints.down("sm")]: {

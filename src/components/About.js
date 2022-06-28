@@ -8,27 +8,6 @@ import resumeBedendo from '../images/Bedendo Resume.pdf';
 import blocksIcon from  '../images/blocks1.png';
 import downloadIcon from '../images/download-icon1.png';
 
-// import codingIcon from '../images/binary-code1.png';
-// import jsIcon from '../images/icons8-javascript2.svg';
-// import reactIcon from '../images/icons8-react.svg';
-// import reduxIcon from '../images/icons8-redux.svg';
-// import htmlIcon from '../images/icons8-html-5.svg';
-// import cssIcon from '../images/icons8-css3.svg';
-// import tailwindIcon from '../images/Tailwind_CSS_Logo.svg.png';
-// import mUI_Icon from '../images/material-ui-logo1.png';
-// import gitIcon from '../images/icons8-git.svg';
-// import githubIcon from '../images/icons8-github-144.png';
-// import scrumIcon from '../images/scrum2icon.png';
-// import scrumAgile_Icon from '../images/icons8-scrum-64.png';
-// import postgreIcon from '../images/icons8-postgresql.svg';
-// import postmanIcon from '../images/postmqnICON2.png';
-// import nodeJsIcon from '../images/nodeJS-icon2.png';
-// import figmaIcon from '../images/icons8-figma2.svg';
-// import appIcon from '../images/apps2.png';
-// import rocketIcon from '../images/rocket2.png';
-// import sequelizeIcon from '../images/sequelizeIcon.png';
-// import expressIcon from '../images/expresIcon.png';
-
 const About = ({ title, dark, id }) => {
 
 const classes = useStyles();
@@ -77,7 +56,7 @@ const blocks = <img src={blocksIcon} alt='img-not-found' style={{display:'flex',
                       ]}
                       multiTextDelay={1400}
                       typeSpeed={100}
-                      multiTextLoop='true'
+                      loop={true}
               /><br/>
 
 
@@ -92,38 +71,8 @@ const blocks = <img src={blocksIcon} alt='img-not-found' style={{display:'flex',
 
                   <span style={{display:'flex', flexDirection:'row', justifyContent: 'flex-start', alignItems: 'center', paddingBottom:'2%', }} >
                     {"   "}Persevering and determined in the face of any obstacle to overcome, with a good capacity for integration when working as a team.
-                    Critical and organized, to keep track of tasks. Always curious in other languages ​​and cultures.
-                    {/* <img src={appIcon} alt='img-not-found' style={{display:'flex', height:'4rem', width:'4rem',  }}/>{"   "} */}
-                    <br/><br/>
+                    Critical and organized, to keep track of tasks. Always curious in other languages ​​and cultures.<br/><br/>
                   </span>
-
-                {/* 
-                <u style={{display:'flex', flexDirection:'row', justifyContent: 'flex-start', alignItems: 'center', paddingBottom:'2%', }} >
-                  {codeBinIcon} Tech Skills:
-                </u>
-
-                  ⋆{" "}Design: 
-                  {" "}<img src={figmaIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem',  }}/> Figma.<br/><Divider style={{width:'85%', margin: '1.5%', display: 'flex', position:'center'}} />
-                  ⋆{" "}Back-end: {" "}{" "}
-                  <img src={nodeJsIcon} alt='img-not-found' style={{height:'1.7rem', width:'6.5rem' }}/> Node.js -{" "}
-                  <img src={expressIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> Express.js -{" "}
-                  <img src={sequelizeIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> Sequelize.{" "}<br/><Divider style={{width:'85%', margin: '1.5%', display: 'flex', position:'center'}} />
-                  ⋆{" "}Front-end: {" "}
-                  {" "}<img src={jsIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem',  }}/> JavaScript -{" "}
-                  <img src={reactIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> React -{" "}
-                  <img src={reduxIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> Redux -{" "}
-                  <img src={htmlIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> HTML5 -{" "}
-                  <img src={cssIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> CSS3 -{" "}{" "}
-                  <img src={mUI_Icon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> Material UI -{" "}{" "}{" "}
-                  <img src={tailwindIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> Tailwind {" "}<br/><Divider style={{width:'85%', margin: '1.5%', display: 'flex', position:'center'}} />
-                  ⋆{" "}Data-base: {" "}
-                  <img src={postgreIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> PostgreSQL {" "}
-                  <img src={postmanIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> Postman {" "}<br/><Divider style={{width:'85%', margin: '1.5%', display: 'flex', position:'center'}} />
-                  ⋆{" "}Networking: {" "}
-                  <img src={gitIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> Git -{" "}{" "}
-                  <img src={githubIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> GitHub -{" "}{" "}
-                  <img src={scrumIcon} alt='img-not-found' style={{height:'1.7rem', width:'1.7rem' }}/> SCRUM{" "}{" "}<br/> 
-                  */}
 
               </Typography>
               

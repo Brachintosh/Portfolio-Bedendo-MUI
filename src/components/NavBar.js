@@ -65,7 +65,7 @@ const linksNav = [
           </List>
           {/* HAMB.MENU */}
           <IconButton  edge='end' className={classes.menuButton} onClick={() => setOpen(!open) } >
-            <MenuIcon  fonstSize='large' />
+            <MenuIcon  size='large' />
           </IconButton>
           
         </Toolbar>

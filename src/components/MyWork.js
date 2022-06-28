@@ -128,7 +128,8 @@ const useStyles = makeStyles((theme) =>({
       },
       maxWidth: theme.spacing(45),
       minHeight: theme.spacing(50),
-      margin: theme.spacing(2),
+      margin: theme.spacing(2.5),
+      boxShadow: "1.2px 1.2px 8px 1.2px  #FFF9D7",
     },
     cardMedia: {
       height: 0,
