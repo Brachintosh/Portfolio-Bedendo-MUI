@@ -1,4 +1,5 @@
 import { makeStyles, Paper, Typography, Grid  } from '@material-ui/core';
+import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from '@material-ui/lab';
 // ICONS  //
 import figmaIcon from '../images/icons8-figma2.svg';
 import nodeJsIcon from '../images/nodeJS-icon2.png';
@@ -114,13 +115,31 @@ const Icons = () => {
 
     <div className={classes.root}>
       <Grid container spacing={3}>
+        {/* DESIGN */}
         <Grid item xs={12}>
           <Paper className={classes.paper}>
             <Typography variant='subtitle' color='inherit' >
-                Design x12
+                {techSkills[0].area}
             </Typography>
           </Paper>
         </Grid>
+
+        <Grid item xs={12}>
+          <Paper className={classes.paper}>
+                <img src={techSkills[0].src} alt={techSkills[0].title} title={techSkills[0].title} className={classes.customLogo} />
+          </Paper>
+        </Grid>
+
+        {/* BACK END */}
+        <Grid item xs={12}>
+          <Paper className={classes.paper}>
+            <Typography variant='subtitle' color='inherit' >
+                {techSkills[1].area}
+            </Typography>
+          </Paper>
+        </Grid>
+        
+
         <Grid item xs={6}>
           <Paper className={classes.paper}>
           <Typography variant='subtitle' color='inherit' >
@@ -135,6 +154,16 @@ const Icons = () => {
             </Typography>
           </Paper>
         </Grid>
+
+        {/* FRONT END */}
+        <Grid item xs={12}>
+          <Paper className={classes.paper}>
+            <Typography variant='subtitle' color='inherit' >
+                {techSkills[4].area}
+            </Typography>
+          </Paper>
+        </Grid>
+        
         <Grid item xs={3}>
           <Paper className={classes.paper}>
             <Typography variant='subtitle' color='inherit' >
