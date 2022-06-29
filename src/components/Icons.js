@@ -1,6 +1,7 @@
 import { makeStyles, Paper, Typography, Grid  } from '@material-ui/core';
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from '@material-ui/lab';
 // ICONS  //
+import canva from '../images/canva.png';
 import figmaIcon from '../images/icons8-figma2.svg';
 import nodeJsIcon from '../images/nodeJS-icon2.png';
 import expressIcon from '../images/expresIcon.png';
@@ -124,7 +125,13 @@ const Icons = () => {
           </Paper>
         </Grid>
 
-        <Grid item xs={12}>
+        <Grid item xs={6}>
+          <Paper className={classes.paper}>
+                <img src={canva} alt={canva} title={canva} className={classes.customLogo} />
+          </Paper>
+        </Grid>
+
+        <Grid item xs={6}>
           <Paper className={classes.paper}>
                 <img src={techSkills[0].src} alt={techSkills[0].title} title={techSkills[0].title} className={classes.customLogo} />
           </Paper>
@@ -138,20 +145,19 @@ const Icons = () => {
             </Typography>
           </Paper>
         </Grid>
-        
+
+        <Grid item xs={6} >
+          <Paper className={classes.paper}>
+            <div className={classes.customLogoALT} >
+
+            <img src={techSkills[1].src} alt={techSkills[1].title} title={techSkills[1].title} className={classes.customLogo} />
+            </div>
+          </Paper>
+        </Grid>
 
         <Grid item xs={6}>
           <Paper className={classes.paper}>
-          <Typography variant='subtitle' color='inherit' >
-                Design 6
-            </Typography>
-          </Paper>
-        </Grid>
-        <Grid item xs={6}>
-          <Paper className={classes.paper}>
-          <Typography variant='subtitle' color='inherit' >
-                Design 6
-            </Typography>
+            <img src={techSkills[2].src} alt={techSkills[2].title} title={techSkills[2].title} className={classes.customLogo} />
           </Paper>
         </Grid>
 
@@ -213,6 +219,15 @@ const useStyles = makeStyles((theme) =>({
         },
           width:"3.3rem",
           height: 'fit',
+      },
+      customLogoALT: {
+        [theme.breakpoints.down('xs')]: {
+            margin:  theme.spacing(1),
+          },
+          [theme.breakpoints.down('sm')]: {
+            margin:  theme.spacing(1),
+          },
+        margin:  theme.spacing(2.35),
       },
       paper: {
         padding: theme.spacing(2),
