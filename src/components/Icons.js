@@ -175,7 +175,7 @@ const Icons = () => {
         </Grid>
 
         <Grid item xs={6}>
-          <Paper className={classes.paper}>
+          <Paper className={classes.paperPostgre}>
             <img src={techSkills[13].src} alt={techSkills[13].title} title={techSkills[13].title} className={classes.customLogo} />
           </Paper>
         </Grid>
@@ -317,15 +317,15 @@ const useStyles = makeStyles((theme) =>({
         color: theme.palette.text.secondary,
         boxShadow: ".6px .5px 5px .7px  #343434",
       },
-      paper2:{
+      paperPostgre:{
         [theme.breakpoints.down('sm')]: {
-          margin:theme.spacing(2, -.5),
-          maxWidth:"20vw",
-        },
-          padding:theme.spacing(2.5, 2.5),
-          margin:theme.spacing(4, -.25),
-          textAlign: 'center',
-          maxWidth:"10vw",
+            padding: theme.spacing(2.35),
+          },
+        padding: theme.spacing(2.55),
+        margin: theme.spacing(-.8),
+        textAlign: 'center',
+        color: theme.palette.text.secondary,
+        boxShadow: ".6px .5px 5px .7px  #343434",
       }
     }
   ));
