@@ -24,7 +24,7 @@ const Skills = ({ dark, title, id }) => {
               className={classes.certificateIMG}
             />  
           </Link><br/>
-          
+          <Divider  className={classes.dividerIMG}/>
           <Link color="inherit" href={noCountryLink} target="_blank" className={classes.certificateLink} >
             <img src={noCountry} alt='NoCounrty-certificate.pdf' title='No Counrty Certificate Bedendo'
               className={classes.certificateIMG}
@@ -101,6 +101,10 @@ const useStyles = makeStyles((theme) =>({
       width: '75vw',
       height: 'auto',
       border:'solid black .7px',
+    },
+    dividerIMG: {
+      marginTop:'.5rem',
+      marginBottom:'1.2rem',
     },
     
   }));

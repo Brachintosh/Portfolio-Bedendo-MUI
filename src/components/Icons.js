@@ -252,6 +252,33 @@ const Icons = () => {
           </Paper>
         </Grid>
 
+        {/* NETWORKING */}
+        <Grid item xs={12}>
+          <Paper className={classes.paper}>
+            <Typography variant='subtitle' color='inherit' >
+                {techSkills[14].area}
+            </Typography>
+          </Paper>
+        </Grid>
+
+        <Grid item xs={4}>
+          <Paper className={classes.paper}>
+            <img src={techSkills[14].src} alt={techSkills[14].title} title={techSkills[14].title} className={classes.customLogo} />
+          </Paper>
+        </Grid>
+
+        <Grid item xs={4}>
+          <Paper className={classes.paper}>
+            <img src={techSkills[15].src} alt={techSkills[15].title} title={techSkills[15].title} className={classes.customLogo} />
+          </Paper>
+        </Grid>
+       
+        <Grid item xs={4}>
+          <Paper className={classes.paper}>
+            <img src={techSkills[16].src} alt={techSkills[16].title} title={techSkills[16].title} className={classes.customLogo} />
+          </Paper>
+        </Grid>
+
       </Grid>
     </div>
   )
