@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles, Typography, Paper, Link, Divider } from "@material-ui/core";
-// import TimeLine from './TimeLine';
+import Icons from './Icons';
 import codingIcon from '../images/binary-code1.png';
 import henryCertificate from '../images/c-h-a4.png';
 import noCountry from '../images/NoCountry.jpeg';
@@ -37,7 +37,7 @@ const Skills = ({ dark, title, id }) => {
             </u>
           </Typography> <Divider />
             
-          {/* <TimeLine /><br/> */}
+          <Icons />
 
         </Paper>
 
