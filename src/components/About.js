@@ -65,13 +65,12 @@ const blocks = <img src={blocksIcon} alt='img-not-found' style={{display:'flex',
                   {blocks} About Me:
                 </u>
                   <span style={{display:'flex', flexDirection:'row', justifyContent: 'flex-start', alignItems: 'center', paddingBottom:'2%', }} >
-                    {"   "}I consider myself a curious person, who likes to investigate on their own, an eternal self-taught student with an insatiable thirst for knowledge.<br/>
+                    {"   "}I consider myself a curious person, who like to find answers by his own means, a student with an unquenchable thirst for knowledge. <br/>
                     {/* <img src={rocketIcon} alt='img-not-found' style={{display:'flex', height:'4rem', width:'4rem',  }}/>{"   "} */}
                   </span>
 
                   <span style={{display:'flex', flexDirection:'row', justifyContent: 'flex-start', alignItems: 'center', paddingBottom:'2%', }} >
-                    {"   "}Persevering and determined in the face of any obstacle to overcome, with a good capacity for integration when working as a team.
-                    Critical and organized, to keep track of tasks. Always curious in other languages ​​and cultures.<br/><br/>
+                    {"   "}Decided and perseverant through every obstacle and challenge, with great team skills to be a good team player, but also critic and organized following up my tasks and duties.<br/><br/>
                   </span>
 
               </Typography>
