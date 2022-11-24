@@ -4,7 +4,7 @@ import {
    makeStyles, Typography, Card, CardActions, CardContent, Box, Button
   } from "@material-ui/core";
 import author from '../images/brachintosh-Img.jpg';
-import resumeBedendo from '../images/Resume Bedendo Brian.pdf';
+import resumeBedendo from '../images/Bedendo resume.pdf';
 import blocksIcon from  '../images/blocks1.png';
 import downloadIcon from '../images/download-icon1.png';
 
